@@ -1,8 +1,7 @@
-.main {
-    background-image: url(../../../assets/raw/background1.png);
-    background-position: top;
-    background-size: contain;
-    background-repeat: no-repeat;
+.background {
+    position: absolute;
+    width: 100%;
+    z-index: -10;
 }
 
 .img-fluid {
@@ -37,6 +36,9 @@
     width: 1.6rem;
     cursor: pointer;
     transition: transform 0.3s;
+    &:hover {
+        filter: drop-shadow(2px 2px 4px rgb(251, 251, 251));
+    }
 }
 
 .status {

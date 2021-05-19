@@ -1,7 +1,7 @@
-.main {
-  background-color: white;
-  background-repeat: no-repeat;
-  background-size: contain;
+.background {
+  position: absolute;
+  top: 0;
+  z-index: 1;
 }
 
 .flex {
@@ -33,18 +33,19 @@
 .sec-1 h1 {
   font-weight: 700;
   text-align: left;
-  font-size: 50px;
-  color: #b8b8b8;
+  font-size: 80px;
+  color: white;
+  text-shadow: 2px 2px 4px #828282;
 }
 
 .sec-1 h1 span {
-  text-shadow: 2px 2px 4px #e92106;
+  text-shadow: 2px 2px 4px rgba(118, 118, 118, 0.333);
 }
 
 .sec-1 p {
   font-weight: 600;
   text-align: left;
-  color: #1b1b1b;
+  color: #5e5e5e;
 }
 
 .sec-2 {

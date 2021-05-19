@@ -1,1 +1,6 @@
-/* No CSS *//*# sourceMappingURL=home-page.component.css.map */
+.background {
+  position: absolute;
+  width: 100%;
+  z-index: -10;
+}
+/*# sourceMappingURL=home-page.component.css.map */

@@ -1,4 +1,6 @@
+<img src="../../../assets/raw/background1.png" alt="" class="background">
 <div class="main container-fluid">
+
     <div class="row ">
         <div class="col-md-12 d-flex justify-content-center">
             <img class="img-fluid my-5 " src="../../../assets//raw/beavolunteer.png" alt="">
@@ -11,6 +13,7 @@
             <div class="card col-12 vol-card shadow">
                 <div class="card-header d-flex justify-content-center">
                     <h2>Become One</h2>
+                    <img src="../../../assets/raw/whitecross.svg " alt="" class="icon" style="width: 16px; position:absolute;right:1.9rem" (click)="toggleForm()">
                 </div>
                 <div class="card-body  ">
                     <form #myForm="ngForm" (submit)="onSubmit(myForm.value)">

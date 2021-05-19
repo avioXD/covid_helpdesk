@@ -1,7 +1,3 @@
-.main {
-  background-color: white;
-}
-
 .starter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,7 +22,8 @@ img {
 }
 
 .card {
-  width: 15rem;
+  margin: 0.6rem;
+  width: 18rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

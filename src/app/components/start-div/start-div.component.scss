@@ -1,7 +1,7 @@
-.main {
-    background-color: rgb(255, 255, 255);
-    background-repeat: no-repeat;
-    background-size: contain;
+.background {
+    position: absolute;
+    top: 0;
+    z-index: 1;
 }
 
 .flex {
@@ -18,16 +18,17 @@
     h1 {
         font-weight: 700;
         text-align: left;
-        font-size: 50px;
-        color: rgb(184, 184, 184);
+        font-size: 80px;
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 4px rgb(130, 130, 130);
         span {
-            text-shadow: 2px 2px 4px rgb(233, 33, 6);
+            text-shadow: 2px 2px 4px rgba(118, 118, 118, 0.333);
         }
     }
     p {
         font-weight: 600;
         text-align: left;
-        color: rgb(27, 27, 27);
+        color: rgb(94, 94, 94);
     }
 }
 

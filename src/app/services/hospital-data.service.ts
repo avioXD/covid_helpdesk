@@ -12,11 +12,11 @@ export class HospitalDataService {
 
   submitData(file : any): Observable<any>{
    
-    return this.http.post("http://localhost:3000/POST/hospitals",file
+    return this.http.post("/POST/hospitals",file
     );
   }
 
   getData(){
-    return this.http.get('http://localhost:3000/GET/hospitals');
+    return this.http.get('/GET/hospitals');
   }
 }

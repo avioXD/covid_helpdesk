@@ -1,0 +1,111 @@
+.main {
+    background-image: url(../../../assets/raw/background1.png);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img-fluid {
+    width: 30rem;
+    margin: 1rem;
+}
+
+.card {
+    min-width: 40rem;
+    max-width: 50rem;
+    overflow: hidden;
+    border: 0px;
+    .card-header {
+        background-color: rgb(155, 0, 104);
+        color: rgb(233, 233, 233);
+    }
+}
+
+.icon-scial {
+    margin-left: 7px;
+    width: 1.6rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+    &:hover {
+        transform: scale(1.06);
+        filter: drop-shadow(2px 2px 10px rgb(184, 184, 184));
+    }
+}
+
+.icon {
+    margin: 10px;
+    width: 1.6rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.status {
+    position: relative;
+    height: 2rem;
+}
+
+.vol-col {
+    min-width: 30rem;
+}
+
+.vol-row {
+    border-radius: 10px;
+}
+
+.vol-card {
+    border-radius: 25px;
+}
+
+.btn-primary {
+    margin-top: 5px;
+    background-color: rgb(146, 224, 20);
+    border: 0px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    box-shadow: 0px 0px 12px rgb(141, 189, 46);
+    &:hover {
+        background-color: rgb(78, 125, 2);
+    }
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-green {
+    background-color: rgb(0, 206, 0);
+}
+
+.form-control {
+    border: 0px;
+    border-bottom: 1px solid rgb(103, 0, 98);
+    &:focus {
+        border-bottom: 2.5px solid rgb(165, 0, 162);
+        box-shadow: none;
+    }
+}
+
+input:required {
+    border-bottom: 1px solid rgb(0, 165, 99);
+}
+
+.mb-3 {
+    max-width: 30rem;
+}
+
+.list-logo {
+    width: 5rem;
+    position: relative;
+}
+
+.vol-det {
+    margin: auto;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 680px) {
+    .card {
+        min-width: 25rem;
+        max-width: 50rem;
+    }
+}

@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+@import url(e:\MY WORKS\Website Project\Angular JS Online Course3\CovidProject\node_modules\bootstrap\dist\css\bootstrap.min.css);
+.bg-success {
+  background-image: -webkit-gradient(linear, left top, right top, from(#00d8db), to(#02ff52));
+  background-image: linear-gradient(to right, #00d8db, #02ff52);
+}
+
+.bg-danger {
+  background-image: -webkit-gradient(linear, left top, right top, from(red), to(#822b65));
+  background-image: linear-gradient(to right, red, #822b65);
+}
+/*# sourceMappingURL=styles.css.map */

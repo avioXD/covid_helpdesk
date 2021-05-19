@@ -1,0 +1,50 @@
+.main {
+  background-color: #ffaeae;
+  color: white;
+}
+
+.list {
+  margin: 0.1rem;
+  list-style: none;
+}
+
+.list .list-item {
+  margin-top: 0.3rem;
+  font-weight: 500;
+  font-family: sans-serif;
+  color: #fdfdfd;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+}
+
+.list .list-item:hover {
+  color: rgba(250, 0, 71, 0.734);
+  text-shadow: 2px 2px 4px #ff4e4e;
+}
+
+.list .list-item:hover fa-icon {
+  color: #ff005d;
+}
+
+.list .list-item fa-icon {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: white;
+}
+
+.gmail {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.tag {
+  color: #ff006a;
+  text-shadow: 1px 1px 6px #f66880;
+}
+/*# sourceMappingURL=footer.component.css.map */

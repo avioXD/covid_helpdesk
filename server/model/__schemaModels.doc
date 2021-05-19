@@ -1,0 +1,30 @@
+Volunteer Model: 
+{
+    _id:
+     name:
+      email: 
+      contact: 
+      whatsapp: 
+      fb: 
+      instagram: 
+      active: 
+      join_date: 
+      leave_date: 
+      ratings: {
+        reater_id: 
+        rating:
+    }
+    available_time:
+}
+Hospital Model: 
+{
+    __id: 
+    s_no:
+    name:
+    type: hospital/nursinghome 
+    contact: 
+    email: 
+    website: 
+    address: 
+    avl_bed:
+}

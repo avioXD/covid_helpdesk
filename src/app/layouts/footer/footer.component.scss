@@ -1,0 +1,41 @@
+.main {
+    background-color: rgb(255, 174, 174);
+    color: white;
+}
+
+.list {
+    margin: 0.1rem;
+    list-style: none;
+    .list-item {
+        margin-top: 0.3rem;
+        font-weight: 500;
+        font-family: sans-serif;
+        color: rgb(253, 253, 253);
+        cursor: pointer;
+        transition: 0.3s;
+        align-items: center;
+        font-size: 18px;
+        &:hover {
+            color: rgba(250, 0, 71, 0.734);
+            text-shadow: 2px 2px 4px rgb(255, 78, 78);
+            fa-icon {
+                color: rgb(255, 0, 93);
+            }
+        }
+        fa-icon {
+            transition: 0.3s;
+            color: rgb(255, 255, 255);
+        }
+    }
+}
+
+.gmail {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.tag {
+    color: rgb(255, 0, 106);
+    text-shadow: 1px 1px 6px rgb(246, 104, 128);
+}

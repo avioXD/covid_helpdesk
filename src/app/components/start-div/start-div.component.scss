@@ -1,0 +1,62 @@
+.main {
+    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.flex {
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-1 {
+    padding: 1rem;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    h1 {
+        font-weight: 700;
+        text-align: left;
+        font-size: 50px;
+        color: rgb(184, 184, 184);
+        span {
+            text-shadow: 2px 2px 4px rgb(233, 33, 6);
+        }
+    }
+    p {
+        font-weight: 600;
+        text-align: left;
+        color: rgb(27, 27, 27);
+    }
+}
+
+.sec-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    img {
+        width: 100%;
+        filter: drop-shadow(5px 5px 10px rgb(255, 95, 167));
+        animation: wave 2s reverse infinite;
+    }
+}
+
+@keyframes wave {
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.btn-primary {
+    margin-top: 5px;
+    background-color: rgb(255, 0, 72);
+    border: 0px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    box-shadow: 1px 1px 16px rgb(248, 115, 170);
+    &:hover {
+        background-color: rgb(172, 0, 37);
+    }
+}

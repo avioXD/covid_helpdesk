@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import '~ngx-toastr/toastr';
+.bg-success {
+    background-image: linear-gradient(to right, rgb(0, 216, 219), rgb(2, 255, 82));
+}
+
+.bg-danger {
+    background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(130, 43, 101));
+}

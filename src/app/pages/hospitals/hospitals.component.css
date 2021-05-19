@@ -1,0 +1,86 @@
+.img-fluid {
+  width: 45rem;
+  margin: 1rem;
+}
+
+.icon {
+  width: 8rem;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.h-card {
+  background-color: #007ebd;
+  color: white;
+  border-radius: 20px;
+  max-width: 50rem;
+}
+
+.h-card span {
+  color: #969696;
+}
+
+.float-img {
+  position: fixed;
+  top: 35rem;
+  width: 20rem;
+  z-index: -1;
+}
+
+.float-img2 {
+  position: fixed;
+  right: 10px;
+  top: 10rem;
+  width: 70rem;
+  z-index: -2;
+  -webkit-animation-name: anim1;
+          animation-name: anim1;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  scroll-behavior: auto;
+  z-index: -2;
+}
+
+@-webkit-keyframes anim1 {
+  0% {
+    top: 20rem;
+  }
+  50% {
+    top: 25rem;
+  }
+  100% {
+    top: 20rem;
+  }
+}
+
+@keyframes anim1 {
+  0% {
+    top: 20rem;
+  }
+  50% {
+    top: 25rem;
+  }
+  100% {
+    top: 20rem;
+  }
+}
+/*# sourceMappingURL=hospitals.component.css.map */

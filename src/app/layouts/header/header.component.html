@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+    <div class="container my-2">
+        <a class="navbar-brand" href="#"> {{"Help A SOul" | uppercase}}  <img src="../../../assets/raw/logo.svg"></a>
+        <button (click)="open=!open" class="my-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""><img [src]="open?close:menu"></span>
+        </button>
+        <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                    <a class="nav-link active color-red" aria-current="page" [routerLink]="['/']" routerLinkActive="router-link-active" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active color-red" aria-current="page" href="#">Oxygen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active color-red" aria-current="page" [routerLink]="['/hospitals']" routerLinkActive="router-link-active" href="/hospitals">Hospitals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active color-red" aria-current="page" href="#">Ambulance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active color-red" aria-current="page" [routerLink]="['/volunteers']" routerLinkActive="router-link-active" href="/volunteers">Volunteer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active color-red" aria-current="page" href="#">Food Delivery</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>

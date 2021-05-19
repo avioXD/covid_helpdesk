@@ -1,0 +1,40 @@
+<div class="main container ">
+    <div class="row">
+        <div class="col-md-12  my-5 d-flex justify-content-center">
+            <img class="img-fluid my-5 " src="../../../assets//raw/insideHospital.svg" alt="">
+        </div>
+        <div class="col-md-12 d-flex justify-content-center">
+            <h1 class="h2 text-center bg-info shadow  p-4 rounded-3">LIST OF HOSPITALS</h1>
+        </div>
+        <div class=" col-md-12 d-flex justify-content-center ">
+            <div class="row w-100 ">
+                <div class="col-12 w-100 m-auto p-3 " *ngFor="let data of lists">
+                    <div class="row m-auto shadow p-2 h-card ">
+                        <div class="col-md-2  m-auto d-flex justify-content-center">
+                            <img class="icon m-auto " src="../../../assets//raw/hospital@2x.png" alt="">
+                        </div>
+                        <div class="col-md-6 m-auto p-2 text-center">
+                            <h1 class="h3 text-center">{{data.name}}</h1>
+                            <p class=""><span class="badge bg-light text-dark">Address:</span> {{data.address}}<br><span class="badge bg-light text-dark">Pin:</span> {{data.pin}}</p>
+                        </div>
+                        <div class="col-md-2 m-auto d-flex justify-content-center">
+                            <h1 class="h5 text-center">{{data.bed_avil}}</h1>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="col-md-12 d-flex justify-content-center">
+
+        </div>
+
+    </div>
+    <!-- <img class="float-img" src="../../../assets/raw/Ambulance@2x.png"> -->
+    <img class="float-img2" src="../../../assets/raw/virus-1.svg">
+
+</div>
+<img class="background" src="../../../assets/raw/background2.png">

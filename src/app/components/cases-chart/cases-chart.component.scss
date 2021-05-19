@@ -1,0 +1,48 @@
+.main {
+    background-color: rgb(204, 255, 237);
+}
+
+.row {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    box-shadow: 4px 4px 10px rgb(143, 143, 143);
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.starter {
+    max-width: 20rem;
+    h3 {
+        text-align: center;
+        color: rgb(0, 113, 32);
+        text-shadow: 2.4px 2.4px 10px rgb(92, 137, 115);
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(118, 255, 111);
+}
+
+.cases {
+    max-width: 20rem;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

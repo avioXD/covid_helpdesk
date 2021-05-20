@@ -21,7 +21,8 @@ app.use(express.static("index.html",{root: "dist/CovidProject"}));
 app.use(require("./route/methodPOST"));
 //GET Methods: 
 app.use(require("./route/methodGET"))
-
+//Admin Requests: 
+app.use(require("./route/adminRequest"));
 
 
 try {

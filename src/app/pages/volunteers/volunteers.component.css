@@ -103,17 +103,17 @@
           box-shadow: none;
 }
 
+.list-logo {
+  width: 5rem;
+  position: relative;
+}
+
 input:required {
   border-bottom: 1px solid #00a563;
 }
 
 .mb-3 {
   max-width: 30rem;
-}
-
-.list-logo {
-  width: 5rem;
-  position: relative;
 }
 
 .vol-det {

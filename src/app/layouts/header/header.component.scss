@@ -40,7 +40,6 @@ $fa-font-path: "../webfonts";
     transition: 0.3s ease-in-out!important;
     &:hover {
         border-bottom: 1px solid red;
-        transform: scale(1.03);
         color: rgb(255, 0, 93) !important;
         text-shadow: 1px 1px 3px rgb(253, 143, 174) !important;
     }

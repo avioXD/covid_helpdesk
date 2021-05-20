@@ -28,6 +28,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 //History: 
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { EditVolunteersComponent } from './admin/components/edit-volunteers/edit-volunteers.component';
+import { AdminMainPageComponent } from './admin/admin-main-page/admin-main-page.component';
+
 
 
 @NgModule({
@@ -47,6 +50,8 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     VolunteersComponent,
     OxygensComponent,
     BeavolunteerComponent,
+    EditVolunteersComponent,
+    AdminMainPageComponent,
     
   
   ],

@@ -2,7 +2,7 @@ import { Component, OnInit,OnChanges } from '@angular/core';
 import { NgModel } from '@angular/forms';
 import { RegisterVolunteerService } from 'src/app/services/register-volunteer.service';
 import {VolunteerModel } from "../../models/volunteer";
-import {  ReactiveFormsModule, FormControl, FormBuilder, Validator} from '@angular/forms';
+import {  ReactiveFormsModule,} from '@angular/forms';
 import { ToastrService } from "ngx-toastr";
 @Component({
   selector: 'app-volunteers',
@@ -28,13 +28,7 @@ export class VolunteersComponent implements OnInit {
   }
 
   ngOnInit(): void {
-      this.regService.getList().subscribe((data)=>{
-        console.log(data);
-            this.members = data;
-      })
-
-
-
+    this.getList();
   }
   onSubmit(value:any){
     const {name, email,contact,gender, age, state, wap, fb, insta} = value;
@@ -54,6 +48,7 @@ export class VolunteersComponent implements OnInit {
        this.regService.postVolunteer(this.newMember).subscribe((data)=>{
          console.log(data);
          this.toste.success("Registration Sucessfull");
+         this.getList();
          this.toggleForm();
        },(err)=>{
         this.toste.error(err.error);
@@ -62,13 +57,16 @@ export class VolunteersComponent implements OnInit {
        });
   }
     ngOnchanges(){
+     this.getList();
+    }
+    toggleForm(){
+      this.form =!this.form;
+    }
+    getList(){
       this.regService.getList().subscribe((data)=>{
         console.log(data);
             this.members = data;
       })
-    }
-    toggleForm(){
-      this.form =!this.form;
     }
   
 /*########### Template Driven Form ###########*/

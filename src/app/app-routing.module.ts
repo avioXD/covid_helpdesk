@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { VolunteersComponent } from "./pages/volunteers/volunteers.component"
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { HospitalsComponent } from './pages/hospitals/hospitals.component';
+import { AdminMainPageComponent } from './admin/admin-main-page/admin-main-page.component';
 const routes: Routes =[
   {
     path: '',
@@ -17,6 +18,10 @@ const routes: Routes =[
   {
     path: 'hospitals',
     component: HospitalsComponent,
+  },
+  {
+    path: 'admin',
+    component: AdminMainPageComponent
   }
 ]
 

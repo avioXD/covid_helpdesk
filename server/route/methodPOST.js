@@ -18,12 +18,12 @@ router.post('/POST/volunteers', async (req, res) => {
             return res.status(422).send("This Volunteer Already In lobby");
         }
         const newVolunteer = new VolunteerModel({
-            name: req.body.name,
+            name: req.body?.name,
             email: req.body.email,
             contact: req.body.contact,
-            gender: req.body.gender,
-            age: req.body.age,
-            wap: req.body.wap,
+            gender: req.body?.gender,
+            age: req.body?.age,
+            wap: req.body?.wap,
             fb: req.body.fb,
             insta: req.body.insta,
             state: req.body.state,
@@ -31,12 +31,12 @@ router.post('/POST/volunteers', async (req, res) => {
             leave_date: null,
             ratings: null,
             available_time: null,
-            varified: false,
+            __v: req?.__v,
         })
         newVolunteer.save().then((volunteer) => {
             res.status(200).json(volunteer);
         }).catch((err) => {
-            return res.status(422).send("Server Error!");
+            return res.status(422).send(`${err}`);
         })
     })
 
@@ -79,6 +79,8 @@ try{
 return res.status(200).send("Upload sucessfull!")
     
 })
+
+
 
 
 

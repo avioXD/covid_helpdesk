@@ -58,7 +58,7 @@ const volunteerSchema = new mongoose.Schema({
         type:String,
         require: false,
     },
-    verified: {
+    __v: {
         type: Boolean,
         rquired: true,
     }

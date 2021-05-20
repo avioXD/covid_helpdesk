@@ -1,6 +1,8 @@
 .main {
-    background-color: rgb(255, 174, 174);
+    background-color: rgb(255, 47, 99);
     color: white;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: -5px -5px 16px rgba(255, 22, 88, 0.387);
 }
 
 .list {
@@ -16,10 +18,10 @@
         align-items: center;
         font-size: 18px;
         &:hover {
-            color: rgba(250, 0, 71, 0.734);
+            color: rgba(59, 59, 59, 0.734);
             text-shadow: 2px 2px 4px rgb(255, 78, 78);
             fa-icon {
-                color: rgb(255, 0, 93);
+                color: rgb(69, 69, 69);
             }
         }
         fa-icon {
@@ -36,6 +38,6 @@
 }
 
 .tag {
-    color: rgb(255, 0, 106);
+    color: rgb(27, 27, 27);
     text-shadow: 1px 1px 6px rgb(246, 104, 128);
 }

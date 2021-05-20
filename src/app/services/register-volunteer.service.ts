@@ -16,15 +16,15 @@ export class RegisterVolunteerService {
 
   }
   getList(){
-    return this.http.get('/GET/volenteerlist');
+    return this.http.get('http://localhost:3000/GET/volenteers');
   }
   postVolunteer(volunteer : VolunteerModel){
     const header ={
       "Content-Type": "application/json"
     }
     const DATA = JSON.stringify(volunteer);
-    console.log(DATA);
-    const url="/POST/volunteers"
+   // console.log(DATA);
+    const url="http://localhost:3000/POST/volunteers"
      return this.http.post(url,volunteer)
   }
 

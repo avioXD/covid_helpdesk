@@ -1,6 +1,9 @@
 .main {
-  background-color: #ffaeae;
+  background-color: #ff2f63;
   color: white;
+  border-radius: 20px 20px 0px 0px;
+  -webkit-box-shadow: -5px -5px 16px rgba(255, 22, 88, 0.387);
+          box-shadow: -5px -5px 16px rgba(255, 22, 88, 0.387);
 }
 
 .list {
@@ -23,12 +26,12 @@
 }
 
 .list .list-item:hover {
-  color: rgba(250, 0, 71, 0.734);
+  color: rgba(59, 59, 59, 0.734);
   text-shadow: 2px 2px 4px #ff4e4e;
 }
 
 .list .list-item:hover fa-icon {
-  color: #ff005d;
+  color: #454545;
 }
 
 .list .list-item fa-icon {
@@ -44,7 +47,7 @@
 }
 
 .tag {
-  color: #ff006a;
+  color: #1b1b1b;
   text-shadow: 1px 1px 6px #f66880;
 }
 /*# sourceMappingURL=footer.component.css.map */

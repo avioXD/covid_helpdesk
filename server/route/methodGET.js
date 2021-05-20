@@ -7,7 +7,7 @@ app.use(express.json());
 
 // Get All Volunteer List:
 const VolunteerModel = require('../model/volunteerSchema');
-router.get("/GET/volenteerlist",(req,res)=>{
+router.get("/GET/volenteers",(req,res)=>{
     VolunteerModel.find().then((data)=>{
         res.status(200).send(data);
     }).catch(err=>{

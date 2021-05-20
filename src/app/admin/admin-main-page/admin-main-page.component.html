@@ -1,0 +1,60 @@
+<div class="main container">
+    <div class="container p-4">
+        <h1 class="text-center"> {{"Admin Panel" |uppercase}}</h1>
+        <div class="row my-5 d-flex justify-content-center">
+            <div *ngIf="card==0 || card==1" class="card" [ngClass]="card==1?'card-clicked':''">
+                <div class="grid">
+                    <img src="../../../assets/icon/charity.png" alt="">
+                </div>
+                <h3>Volunteer List</h3>
+                <div class="grid my-5">
+                    <button class="btn btn-primary" (click)='toogleCard(1)'>{{card!=0?"Back":"Edit"}}</button>
+                </div>
+            </div>
+            <div *ngIf="card==0 || card==2" class="card" [ngClass]="card==2?'card-clicked':''">
+                <div class="grid">
+                    <img src="../../../assets/raw/hospital.svg" alt="">
+                </div>
+                <h3>Hospital List</h3>
+                <div class="grid my-5">
+                    <button class="btn btn-primary" (click)='toogleCard(2)'>{{card!=0?"Back":"Edit"}}</button>
+                </div>
+            </div>
+            <div *ngIf="card==0 || card==3" class="card" [ngClass]="card==3?'card-clicked':''">
+                <div class="grid">
+                    <img src="../../../assets/raw/oxygen.svg" alt="">
+                </div>
+                <h3>Oxygen Dooner</h3>
+                <div class="grid my-5">
+                    <button class="btn btn-primary" (click)='toogleCard(3)'>{{card!=0?"Back":"Edit"}}</button>
+                </div>
+            </div>
+            <div *ngIf="card==0 || card==4" class="card" [ngClass]="card==4?'card-clicked':''">
+                <div class="grid">
+                    <img src="../../../assets/raw/vacine.svg" alt="">
+                </div>
+                <h3>Vacine Center</h3>
+                <div class="grid my-5">
+                    <button class="btn btn-primary" (click)='toogleCard(4)'>{{card!=0?"Back":"Edit"}}</button>
+                </div>
+            </div>
+        </div>
+        <div class="container" [ngSwitch]="card">
+            <div *ngSwitchCase="1">
+                <app-edit-volunteers></app-edit-volunteers>
+            </div>
+            <div *ngSwitchCase="2">
+                2nd div
+            </div>
+            <div *ngSwitchCase="3">
+                3rdm iv
+            </div>
+            <div *ngSwitchCase="4">
+                4th div
+            </div>
+        </div>
+
+
+    </div>
+
+</div>

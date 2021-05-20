@@ -1,0 +1,49 @@
+.card {
+    margin: 2rem;
+    padding: 1rem;
+    width: 15rem;
+    height: 18rem;
+    align-items: center;
+    h3 {
+        font-size: 20px;
+        color: rgb(115, 115, 115);
+    }
+    border-radius: 20px;
+    border: 0px;
+    box-shadow: 5px 5px 15px rgba(165, 165, 165, 0.401);
+}
+
+.card-clicked {
+    border-bottom: 4px solid rgb(187, 0, 94);
+}
+
+.grid {
+    margin: 1rem;
+    img {
+        width: 8rem;
+        height: 8.2rem;
+    }
+}
+
+.btn-primary {
+    position: absolute;
+    bottom: -20px;
+    right: 25%;
+    width: 50%;
+    margin-top: 5px;
+    background-color: rgb(255, 0, 72);
+    border: 0px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    box-shadow: 1px 1px 16px rgb(248, 115, 170);
+    &:hover {
+        background-color: rgb(172, 0, 37);
+    }
+}
+
+.line {
+    width: 5rem;
+    height: 20px;
+    background-color: green;
+}

@@ -46,8 +46,6 @@
 
 .nav-item a:hover {
   border-bottom: 1px solid red;
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
   color: #ff005d !important;
   text-shadow: 1px 1px 3px #fd8fae !important;
 }

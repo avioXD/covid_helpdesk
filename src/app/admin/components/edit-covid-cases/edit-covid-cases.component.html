@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="row d-flex justify-content-center">
+        <img class="img-fluid animate-mover" src="../../../../assets/raw/fightCovid.svg" alt="">
+    </div>
+    <hr>
+    <div class="container-fluid">
+        <h2 class="text-center "> Update Covid-19 Cases</h2>
+        <form #myForm='ngForm' (submit)='onSubmit(myForm.value)'>
+            <div class="row row p-4 d-flex justify-content-center">
+                <div class=" card">
+                    <label for="newcase" class="form-label">New Case</label>
+                    <input type="number" class="form-control " id="newcase" name="newcase" ngModel>
+                </div>
+                <div class="card">
+                    <label for="active" class="form-label"> Active </label>
+                    <input type="number" class="form-control " id="active" name="active" ngModel>
+                </div>
+                <div class=" card">
+                    <label for="deaths" class="form-label"> Deaths</label>
+                    <input type="number" class="form-control " id="deaths" name="deaths" ngModel>
+                </div>
+                <div class="card">
+                    <label for="recovered" class="form-label">Recovered</label>
+                    <input type="number" class="form-control " id="recovered" name="recovered" ngModel>
+                </div>
+
+            </div>
+            <div class="row justify-content-center d-flex">
+                <button class="btn btn-secondary" type="submit">Update</button>
+            </div>
+
+        </form>
+    </div>
+    <hr>
+    <div class="table-container">
+        <h4 class="text-center">Previus Updates</h4>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">New Case</th>
+                    <th scope="col">Active Case</th>
+                    <th scope="col">Deaths Case</th>
+                    <th scope="col">Recovered Case</th>
+                    <th scope="col">update</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of items">
+                    <td>{{item.newcase}}</td>
+                    <td>{{item.active}}</td>
+                    <td>{{item.deaths}}</td>
+                    <td>{{item.recovered}}</td>
+                    <td>{{item.update | date :'short'}}</td>
+                    <img src="../../../../assets/icon/del.svg" class="icon " alt="" (click)='remove(item)'>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

@@ -1,0 +1,51 @@
+<div class="container">
+
+    <h1 class="text-center">MODIFY VOLUNTEER LIST</h1>
+    <div class="row d-flex justify-content-center">
+        <div *ngIf="!unaprove" class="card">
+            <h3>PENDING POSTS</h3>
+            <h2> 0 </h2>
+            <button class="btn btn-primary" (click)="showUnAprovedPosts() ; formOpen = !formOpen ; aprove=!aprove">{{formOpen?"Hide":"show"}}</button>
+        </div>
+        <div *ngIf="!aprove" class="card">
+            <h3>All Posts</h3>
+            <h2> 0 </h2>
+            <button class="btn btn-primary" (click)=" formOpen = ! formOpen; unaprove = !unaprove; showAprovePost()">{{formOpen?"Hide":"show"}}</button>
+        </div>
+    </div>
+</div>
+<div *ngIf="formOpen" class="container">
+    <h1 class="text-center my-5 ">CURRENT POST</h1>
+    <div class=" row d-flex justify-content-center ">
+        <div class=" card m-3   " *ngFor="let post of posts">
+            <div class="grid w-100">
+                <span class="badge mx-2 m-2" [ngClass]="post.aprove?'bg-green' : 'bg-red'">{{post.aprove?"Verified":"NonVerified"}}</span>
+                <span class="m-2">Posted by : <span>{{post.name}}</span></span>
+                <h4 class="m-2 title"> {{post.title}}</h4>
+                <div class="description ">
+                    <h6>Description: </h6>
+                    <p>{{post.content}}</p>
+                </div>
+                <div class="description ">
+                    <img *ngIf="post.img[0].src" class="post-img " [src]="post.img[0].src" alt=" ">
+                </div>
+                <div class=" m-4 ">
+                    <h1 class="text-center "><span> {{post.donation}}<span class="material-icons" style="color: rgb(18, 218, 0); font-weight: 700; ">
+                        <span class="material-icons">
+                            savings
+                            </span>
+                        </span>
+                        </span>
+                    </h1>
+                    <h6 class="text-center ">Donations</h6>
+                </div>
+
+                <div class="container-fluid  d-flex justify-content-center ">
+                    <button class="btn btn-secondary m-1 " (click)="deletePost(post)">Delete</button>
+                    <button *ngIf="!post.aprove" class="btn btn-secondary m-1 " (click)="aprovePost(post)">Aprove</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

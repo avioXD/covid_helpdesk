@@ -46,14 +46,14 @@ export class VolunteersComponent implements OnInit {
       }
 
        this.regService.postVolunteer(this.newMember).subscribe((data)=>{
-         console.log(data);
-         this.toste.success("Registration Sucessfull");
+        // console.log(data);
+         this.toste.success("Done! Wait for admin aproval");
          this.getList();
          this.toggleForm();
        },(err)=>{
         this.toste.error(err.error);
         this.toggleForm();
-         console.log(err);
+         //console.log(err);
        });
   }
     ngOnchanges(){

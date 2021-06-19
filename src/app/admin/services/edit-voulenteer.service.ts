@@ -9,6 +9,12 @@ export class EditVoulenteerService {
   constructor(private http: HttpClient) { }
 
   updateUser(member: any){
-     return this.http.put(`http://localhost:3000/admin/PUT/volunteers/${member._id}`,member);
+     return this.http.put(`/admin/PUT/volunteers/${member._id}`,member);
+  }
+  getAllUser(){
+    return this.http.get('/admin/GET/volunteers');
+  }
+  deleteUser(value:any){
+
   }
 }

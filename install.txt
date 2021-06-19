@@ -1,0 +1,2 @@
+npm i ngx-image-compress
+npm install ng2-animate-on-scroll --save

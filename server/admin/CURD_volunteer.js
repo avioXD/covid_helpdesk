@@ -4,7 +4,7 @@ const VolunteerModel = require('../model/volunteerSchema');
 
 
 exports.createUser= async (req,res)=>{
-    console.log(req.body);
+    
     if (!req.body.name || !req.body.email || !req.body.contact || !req.body.wap) {
         return res.status(422).send("Fields Are Not satisfied!");;
     }
@@ -39,7 +39,7 @@ exports.findOne = (req,res) =>{
     if(!req.body){
         return res.status(422).send("Fields Are Not satisfied!");;
     }
-    const _id= req.params._id;
+    const _id= req.params.id;
     VolunteerModel.findById(_id).then((data)=>{
         res.status(200).send(data);
     }).catch((err)=>{
@@ -52,8 +52,16 @@ exports.updateUser=(req,res)=>{
         return res.status(422).send("Fields Are Not satisfied!");
     }
     const _id=req.params.id;
-    VolunteerModel.findByIdAndUpdate(_id,req.body,{useFindAndModify: false}).then((data)=>{
-        console.log(data);
+    VolunteerModel.findByIdAndUpdate(_id,req.body,{useFindAndModify: false , update: new Date()}).then((data)=>{
+        res.status(200).send(data);
+    }).catch((err)=>{
+        res.status(422).send(err);
+    })
+}
+
+// find all 
+exports.findAll = (req,res) =>{
+    VolunteerModel.find().then((data)=>{
         res.status(200).send(data);
     }).catch((err)=>{
         res.status(422).send(err);

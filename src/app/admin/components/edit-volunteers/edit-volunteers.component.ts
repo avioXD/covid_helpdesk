@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {VolunteerModel } from "../../../models/volunteer";
 import {  ReactiveFormsModule,FormBuilder  } from '@angular/forms';
-import { RegisterVolunteerService } from 'src/app/services/register-volunteer.service';
 import { EditVoulenteerService } from '../../services/edit-voulenteer.service';
 import { ToastrService } from 'ngx-toastr';
 
@@ -20,9 +19,9 @@ export class EditVolunteersComponent implements OnInit {
   nonactive:string = "../../../../assets/status/noActive.png";
   verified:string ="../../../../assets/status/verified.png"
   nonverified:string ="../../../../assets/status/notVerified.png"
-  constructor(private regService : RegisterVolunteerService,
+  constructor(
     public ngForm:ReactiveFormsModule,
-    private updateService :EditVoulenteerService,
+    private editVolService :EditVoulenteerService,
     private toster: ToastrService
     ) { }
 
@@ -32,7 +31,7 @@ export class EditVolunteersComponent implements OnInit {
 
   }
   getList(){
-    this.regService.getList().subscribe((data)=>{
+    this.editVolService.getAllUser().subscribe((data)=>{
       console.log("getData: ",data);
           this.members = data;
     })
@@ -42,7 +41,7 @@ export class EditVolunteersComponent implements OnInit {
   }
   onSubmit(value: any, i:any){
     console.log(value);
-      this.updateService.updateUser(value).subscribe((data)=>{
+      this.editVolService.updateUser(value).subscribe((data)=>{
         this.toster.success("Updated!");
         this.toggleForm(i)
       },(err)=>{

@@ -1,0 +1,51 @@
+.background {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0.3;
+  z-index: -10;
+}
+
+.main {
+  margin-top: 7rem;
+}
+
+.card {
+  margin: 2rem;
+  padding: 1rem;
+  width: 20rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  border: 0px;
+  -webkit-box-shadow: 5px 5px 15px rgba(165, 165, 165, 0.401);
+          box-shadow: 5px 5px 15px rgba(165, 165, 165, 0.401);
+}
+
+.card h3 {
+  font-size: 20px;
+  color: #737373;
+}
+
+.btn-primary {
+  z-index: 1;
+  right: 25%;
+  left: 25%;
+  position: absolute;
+  bottom: -20px;
+  width: 50%;
+  margin-top: 5px;
+  background-color: #ff0048;
+  border: 0px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  -webkit-box-shadow: 1px 1px 16px #f873aa;
+          box-shadow: 1px 1px 16px #f873aa;
+}
+
+.btn-primary:hover {
+  background-color: #ac0025;
+}
+/*# sourceMappingURL=admin-login.component.css.map */

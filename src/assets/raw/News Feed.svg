@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1338" height="262" viewBox="0 0 1338 262">
+  <defs>
+    <filter id="_News_Feed_" x="0" y="0" width="1338" height="262" filterUnits="userSpaceOnUse">
+      <feOffset dx="4" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_News_Feed_)">
+    <text id="_News_Feed_2" data-name="  News Feed " transform="translate(665 199)" fill="#464646" font-size="200" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="-660" y="0" xml:space="preserve">  News Feed </tspan></text>
+  </g>
+</svg>

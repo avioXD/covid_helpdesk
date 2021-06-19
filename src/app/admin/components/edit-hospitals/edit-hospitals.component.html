@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-12 d-flex justify-content-center">
+            <img class="img-fluid my-5 " src="../../../assets/raw/insideHospital.svg" alt="">
+        </div>
+        <div class="col-md-12 d-flex justify-content-center">
+            <div class="card d-flex justify-content-center">
+                <p class=" text-center"> Check Excel File Pattern<span class="material-icons">info</span></p>
+                <h3 class="my-3">UPLOAD EXCEL FIILE</h3>
+                <form>
+                    <input #fileSelect type="file" style="display: none;" class="type" name="xls" (change)="onFileSelected($event)">
+                    <button class="btn btn-secondary" (click)="fileSelect.click()">Select</button>
+                </form>
+                <button class="btn btn-primary" (click)="onSubmit()">Upload</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row d-flex justify-content-center">
+            <form (submit)="updateBeds(list)" class="card d-flex justify-content-center " *ngFor="let list of lists">
+                <img class="icon" src="../../../assets/raw/hospital2.svg">
+                <h2 class="text-center">{{list.name}}</h2>
+                <h6>{{list.contact}}</h6>
+                <h6 class="text-center">{{list.address}}
+                </h6>
+                <p>Pin: {{list.pin}}</p>
+                <h6 class="text-center">{{list.h_type=="hsp"?'Hospital':'Nursing Home'}} </h6>
+                <span class="badge bg-success w-50"> <span class="material-icons">
+                    beds
+                    </span>
+                <div class="col-12">
+                    <!-- <label for="name" class="form-label">Full Name: </label> -->
+                    <input type="number" class="form-control " id="bed_avil" name="bed_avil" [(ngModel)]='list.bed_avil' ngModel>
+                </div>
+                </span>
+                <button class="btn btn-primary" type="submit">update beds</button>
+            </form>
+
+        </div>
+    </div>
+</div>

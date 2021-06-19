@@ -1,61 +1,60 @@
-<img src="../../../assets/raw/background1.png" alt="" class="background">
+<div class="background"></div>
 <div class="main container-fluid">
 
-    <div class="row ">
-        <div class="col-md-12 d-flex justify-content-center">
-            <img class="img-fluid my-5 " src="../../../assets//raw/beavolunteer.png" alt="">
-
+    <div class="row">
+        <div class="container d-flex justify-content-center">
+            <img class="img-fluid my-5 shadow-red animate-mover" src="../../../assets/raw/beavolunteer.svg" alt="">
         </div>
         <div *ngIf="!form" class="col-md-12 my-3 d-flex justify-content-center ">
-            <button (click)="toggleForm()" class="btn btn-primary">Become One</button>
+            <button (click)="toggleForm()" class="btn btn-secondary">Become One</button>
         </div>
         <div *ngIf="form" class="col-md-12 p-4 d-flex justify-content-center ">
-            <div class="card col-12 vol-card shadow">
+            <div class="card col-12 form ">
                 <div class="card-header d-flex justify-content-center">
                     <h2>Become One</h2>
-                    <img src="../../../assets/raw/whitecross.svg " alt="" class="icon" style="width: 16px; position:absolute;right:1.9rem" (click)="toggleForm()">
+                    <img src="../../../assets/raw/menucross.svg " alt="" class="icon" style="width: 16px; position:absolute;right:1.9rem" (click)="toggleForm()">
                 </div>
-                <div class="card-body  ">
+                <div class="card-body  d-flex justify-content-center  w-100">
                     <form #myForm="ngForm" (submit)="onSubmit(myForm.value)">
-                        <div class="container-fluid d-flex justify-content-center mb-3">
+                        <div class=" d-flex justify-content-center mb-3">
                             <div class="col-12">
                                 <!-- <label for="name" class="form-label">Full Name: </label> -->
                                 <input type="text" class="form-control " id="name" placeholder="Name" name="name" ngModel>
                             </div>
                         </div>
-                        <div class="container d-flex justify-content-center mb-3">
+                        <div class=" d-flex justify-content-center mb-3">
                             <div class="col-12">
                                 <!-- <label for="email" class="form-label">Email Id: </label> -->
                                 <input type="text" class="form-control" id="email" placeholder="Email" ngModel name="email">
                             </div>
                         </div>
-                        <div class="container d-flex justify-content-center mb-3">
+                        <div class=" d-flex justify-content-center mb-3">
                             <div class="col-12">
                                 <!-- <label for="number" class="form-label">Contact Number: </label> -->
                                 <input type="telephone" class="form-control" id="contact" placeholder="+91 Number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" ngModel name="contact">
                             </div>
                         </div>
-                        <div class="container d-flex justify-content-center mb-3">
+                        <div class=" d-flex justify-content-center mb-3">
                             <div class="col-12">
                                 <!-- <label for="gender" class="form-label">Gender : </label> -->
 
-                                <div class="container d-flex" id="gender">
-                                    <div class="col-3">
+                                <div class=" d-flex" id="gender">
+                                    <div class="col-3 form-check-label">
                                         Gender:
                                     </div>
                                     <div class="col-3 from-check">
-                                        <input class="form-check-input" type="radio" name="gender" id="male" value="male" ngModel>
-                                        <label class="form-check-label mx-1" for="male" checked>
+                                        <input class="form-check-input d-flex justify-content-center" type="radio" name="gender" id="male" value="male" ngModel>
+                                        <label class="form-check-label mx-1 " for="male" checked>
                                             Male
                                         </label>
                                     </div>
-                                    <div class="col-3 from-check">
+                                    <div class="col-3 from-check d-flex justify-content-center">
                                         <input class="form-check-input" type="radio" name="gender" id="female" value="female" ngModel>
                                         <label class="form-check-label mx-1" for="female">
                                           Female
                                         </label>
                                     </div>
-                                    <div class="col-3 from-check">
+                                    <div class="col-3 from-check d-flex justify-content-center">
                                         <input class="form-check-input" type="radio" name="gender" id="others" value="others" ngModel>
                                         <label class="form-check-label mx-1" for="others">
                                           Others
@@ -64,7 +63,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="container d-flex justify-content-center mb-3">
+                        <div class=" d-flex justify-content-center mb-3">
                             <div class="col-5 mx-2">
                                 <!-- <label for="age" class="form-label">Age </label> -->
                                 <input type="number" class="form-control" id="age" placeholder="Age" ngModel name="age">
@@ -78,27 +77,27 @@
                                   </select>
                             </div>
                         </div>
-                        <div class="container d-flex justify-content-center mb-3">
+                        <div class=" d-flex justify-content-center mb-3">
                             <div class="col-12">
                                 <!-- <label for="whatsapp" class="form-label"> Whatsapp Number </label> -->
                                 <input type="telephone" class="form-control" id="wap" placeholder="+91 Whatsapp Number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" ngModel name="wap">
                             </div>
                         </div>
-                        <div class="container d-flex justify-content-center mb-3">
+                        <div class=" d-flex justify-content-center mb-3">
                             <div class="col-12">
                                 <!-- <label for="fb" class="form-label">Facebook Profile: </label> -->
                                 <input type="link" class="form-control" id="fb" placeholder="Facebook profile" name="fb" ngModel>
                             </div>
                         </div>
-                        <div class="container d-flex justify-content-center mb-3">
+                        <div class=" d-flex justify-content-center mb-3">
                             <div class="col-12">
                                 <!-- <label for="insta" class="form-label">Instagram Profile:  </label> -->
                                 <input type="link" class="form-control" id="insta" placeholder="Instagram profile" name="insta" ngModel>
                             </div>
                         </div>
 
-                        <div class="my-5 container d-flex justify-content-center mb-3">
-                            <button class="btn btn-primary" type="submit">Register</button>
+                        <div class="my-5 container  d-flex justify-content-center mb-3">
+                            <button class="btn btn-secondary" type="submit">Register</button>
                         </div>
 
                     </form>
@@ -109,30 +108,31 @@
             <h1 class="heading my-5">Volunteers</h1>
         </div>
         <div class=" col-md-12 d-flex justify-content-center mb-5">
-            <div class="row w-100 container  d-flex justify-content-center">
-                <div class=" col-md-4 vol-col" *ngFor="let member of members">
-                    <div class="row  m-2 shadow vol-row">
+            <div class="row d-flex justify-content-center">
+                <div class="card" *ngFor="let member of members">
+                    <div class="row">
                         <div class="status">
                             <p>
-                                <span class="badge mx-2 m-2" [ngClass]="member.__v?'bg-green' : 'bg-red'">{{member.__v?"Verified":"NonVerified"}}</span>
+                                <span class="badge mx-2 " [ngClass]="member.__v?'bg-green' : 'bg-red'">{{member.__v?"Verified":"NonVerified"}}</span>
 
-                                <span class="badge m-2 " [ngClass]="member.state?'bg-green' : 'bg-info'">{{member.state?"Active":"Resting"}}</span></p>
+                                <span class="badge m-1 " [ngClass]="member.state?'bg-green' : 'bg-info'">{{member.state?"Active":"Resting"}}</span></p>
                         </div>
 
-                        <div class="col-3 m-auto">
+                        <div class="col-3 ">
                             <span class="list-logo m-auto">
-                                <img [src]="member.gender == 'male'?male:female" alt="" class="img-fluid ">
+                                <img [src]="member.gender == 'male'?male:female" alt="" class="icon ">
                             </span>
                         </div>
-                        <div class="col-9 my-4 ">
-                            <h1 class="h6 text-center">{{member.name}}</h1>
-                            <p class="p text-center"><img class="link" class="icon-scial" src="../../../assets/icon/dialer.png"><img class="link" class="icon-scial" src="../../../assets/icon/whatsapp.png">
-                                <span class="h6"> {{member.contact}}</span>
+                        <div class="col-8  m-auto mx-2">
+                            <h2 class=" ">{{member.name}}</h2>
+                            <p class="h6"><span class="h6"> {{member.contact}}</span><img class="link" class="icon-scial" src="../../../assets/icon/whatsapp.png">
                                 <a class="link" [href]="member.fb"><img class="icon-scial" src="../../../assets/icon/fb.png"></a>
                             </p>
                         </div>
+                        <button *ngIf="member.state" class="btn btn-primary" (click)="call.click()"><a #call [href]="'tel:'+member.contact"></a>call now</button>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>

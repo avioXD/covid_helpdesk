@@ -1,0 +1,116 @@
+.img-fluid {
+    width: 45rem;
+    margin: 1rem;
+}
+
+.icon {
+    width: 3rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card {
+    cursor: pointer;
+    margin: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 0.8rem;
+    width: 20rem;
+    padding-bottom: 2rem;
+    align-items: center;
+    h2 {
+        font-weight: 700;
+        font-size: 25px;
+        color: #5c5c5cf6;
+    }
+    h6 {
+        margin: 4px;
+        font-size: 20px;
+        color: rgb(131, 131, 131);
+    }
+    p {
+        margin-bottom: 7px;
+        font-size: 15px;
+        font-weight: 700;
+        color: rgb(138, 138, 138);
+    }
+    .badge {
+        margin: 1rem;
+        font-size: 30px;
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+    }
+    border-radius: 20px;
+    border:0;
+    box-shadow: 5px 5px 15px rgba(165, 165, 165, 0.401);
+    transition: border-buttom 0.3s;
+    transition: transform 0.4s;
+}
+
+.float-img {
+    position: fixed;
+    top: 35rem;
+    width: 20rem;
+    z-index: -1;
+}
+
+.float-img2 {
+    position: fixed;
+    right: 10px;
+    top: 10rem;
+    width: 70rem;
+    z-index: -2;
+    animation-name: anim1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    scroll-behavior: auto;
+    z-index: -2;
+}
+
+.btn-primary {
+    z-index: 1;
+    right: 25%;
+    left: 25%;
+    position: absolute;
+    bottom: -20px;
+    width: 50%;
+    margin-top: 5px;
+    background-color: rgb(255, 0, 72);
+    border: 0px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    box-shadow: 1px 1px 16px rgb(248, 115, 170);
+    &:hover {
+        background-color: rgb(172, 0, 37);
+    }
+}
+
+.btn-secondary {
+    width: 15rem;
+    margin-top: 5px;
+    background-color: rgb(255, 0, 72);
+    border: 0px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    box-shadow: 1px 1px 16px rgb(248, 115, 170);
+    &:hover {
+        background-color: rgb(172, 0, 37);
+    }
+}
+
+.table-container {
+    overflow-y: scroll;
+}
+
+@media only screen and(max-width:320px) {}

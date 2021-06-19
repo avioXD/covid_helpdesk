@@ -1,3 +1,7 @@
+.main {
+  margin-top: 7rem;
+}
+
 .background {
   position: absolute;
   top: 0;
@@ -32,17 +36,19 @@
 
 .sec-1 h1 {
   font-weight: 700;
-  text-align: left;
-  font-size: 80px;
-  color: white;
-  text-shadow: 2px 2px 4px #828282;
+  text-align: center;
+  font-size: 400%;
+  color: #818181;
+  text-shadow: 2px 2px 4px #dadada;
 }
 
 .sec-1 h1 span {
-  text-shadow: 2px 2px 4px rgba(118, 118, 118, 0.333);
+  text-shadow: 2px 2px 4px rgba(221, 221, 221, 0.055);
 }
 
 .sec-1 p {
+  padding-left: 2rem;
+  padding-right: 2rem;
   font-weight: 600;
   text-align: left;
   color: #5e5e5e;
@@ -62,30 +68,17 @@
 }
 
 .sec-2 img {
-  width: 100%;
+  width: 45rem;
   -webkit-filter: drop-shadow(5px 5px 10px #ff5fa7);
           filter: drop-shadow(5px 5px 10px #ff5fa7);
-  animation: wave 2s reverse infinite;
-}
-
-@-webkit-keyframes wave {
-  50% {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-  }
-}
-
-@keyframes wave {
-  50% {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-  }
 }
 
 .btn-primary {
+  width: 12rem;
   margin-top: 5px;
   background-color: #ff0048;
   border: 0px;
+  border-radius: 20px;
   color: white;
   font-weight: 600;
   -webkit-box-shadow: 1px 1px 16px #f873aa;
@@ -94,5 +87,16 @@
 
 .btn-primary:hover {
   background-color: #ac0025;
+}
+
+@media only screen and (max-width: 772px) {
+  .sec-1 h1 {
+    font-size: 300%;
+  }
+  .sec-2 img {
+    width: 20rem;
+    -webkit-filter: drop-shadow(5px 5px 10px #ff5fa7);
+            filter: drop-shadow(5px 5px 10px #ff5fa7);
+  }
 }
 /*# sourceMappingURL=start-div.component.css.map */

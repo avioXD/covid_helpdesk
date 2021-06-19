@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1327" height="748" viewBox="0 0 1327 748">
+  <defs>
+    <filter id="Rectangle_338" x="0" y="728" width="1327" height="20" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="newspaper" x="385" y="0" width="572" height="572" filterUnits="userSpaceOnUse">
+      <feOffset dx="8" dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur-2"/>
+      <feFlood flood-color="#636363" flood-opacity="0.471"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="News_feed" x="115" y="469" width="1127" height="262" filterUnits="userSpaceOnUse">
+      <feOffset dx="4" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="newsfeed" transform="translate(-81 -66)">
+    <g transform="matrix(1, 0, 0, 1, 81, 66)" filter="url(#Rectangle_338)">
+      <rect id="Rectangle_338-2" data-name="Rectangle 338" width="1309" height="2" rx="1" transform="translate(9 734)" fill="rgba(220,220,220,0.24)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 81, 66)" filter="url(#newspaper)">
+      <image id="newspaper-2" data-name="newspaper" width="512" height="512" transform="translate(407 22)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAMAAADDpiTIAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAABR5AAAUeQGwCztjAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAoJQTFRF////5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTkMz5IXGZwX2lzaXJ7anF4bXZ+dX2Fi5GWl52ioKWqpKmtp6uuqK2xrLCztbi8uby/ubzAu77BvsDDvsHEwMPFwcTHxsjLyMrMyszOzs/Qz9DS0NHT0tPU09TV1NXW1dbX1dfX1tfY2Nna2dra2tvc29zd3Nzd3N3d3N3e3d3e4ODg4eHh4uLi5OTk5eDg5eHh5tvb68LC7Li47bW18Ken+Xd3/1lZ8IYH0gAAAJ90Uk5TAAECAwQFBgcICQoLDA4PERITFBUWFxkaGxweISIkJSYnKCkqLC0uLzEzNjg8PT5AQUJERUZISUpMTVFTVFhaXV5fYmNkZmdpbHFydHl7fH6AgYSFh4iKi46PkZOUlpudoqWnqKmqrK6vsLO1ubu/wcPFxsfJysvNztLT19ja29zd3t/g4eLj5OXm6err7O3u7/Dx8vP09vf4+fr7/P3+wXICrQAAB8tJREFUeNrt2/V7VmUcx/EN1BGKiiIYCNjdCiqglGJ3F2KLwsRCQlBQMUAUY213d3eh3rb+P7rtAjb2xDnPud217bxef8DnOt/tvZ/ua1VVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHSrEbWHxR/td/75/eKvHlY7wv2x7X5PaDom9uiga0K4ZlDs1WOawj27uz+uQ1eH/5xdHXV02C2to7cMizpafXbr6OpD3R/TtMbQ5ooBEUd3Xto+unTniKMDrmgfbZzm/nhRnRXWmjs02uqBq9aOrjow2ujQues+9axq90eK6vKw3uJRkVYnNawfbZgUaXTU4g6fevkA90eJ6obQ0cp9o6ye1mk0nBZldN+VnUZvGOr+7Ha8vfOnhrqJ2Uc3mbHBaJixSfbViXUbjN6+o/uz2mfFhp8aWk7KOrr57C6jYfbmWVdPaukyumIf92czoS4UcMnGmUa3X1BodMH2mUY3vqTQaN0E92dxYkso6PohGUb3uq/w6H17ZRgdcn3h0ZYT3V+xjS4OxczfruLVIx4rNvrYERWPbje/6KdevJH7K7PZdaG4e/escPW45uKjzcdVOLrnvSU+9brN3F+JbW8LpTx6eCWj/S8oORou6F/J6uGPlhy9bVv3p7fH8tKfGpqnpx8dfG2Z0XDt4PSr05vLjC7fw/1pjX0klHVe2qfMbW4tP3rrNilH+51XfvSRse5P59imkMDV6Z4yd1mWZHTZLqlGB12dZLTpWPenUH1OSObmNE+ZBz2UbPShg1KMDrs54aeeU+3+pAZeGZK6c6fEq5Mbko42TE48utOdiT/1yoHuT2arG0Nyqw5I+Ed1eorRcHrCXA9YlWL0xq3cn8ToJWk+NTQcnej149JUo+HSRG8jRzekGl0y2v3l7bcypHRq+dEt5qQdnbNF+dVT046u3M/9ZZ8U60NqZZ8yd1iYfnThDuX+qGakH62f6P7STm4JFSjzlLn3/ZWM3r936ifV8lpOdn/qJ8UESj5ljn+8stHHx6d+Uk2g1FPu/3P/kb3m/mJPigmUeMo8oaXS0ZYTUj+pJlD8KTfv95d4Uiyv2FNm/4syjIaL+qd9Uk2g2FNu3u8v+aRYXvPxhUY3nZVpNMzatNDq8c2ZRgs/5eb9/jJPiglc2DXX4fOyjs4b3vWP6sKso4WecvN+//SmkFmXp8zd7s4+evduqZ9UE7yNTHd/5yfFc0MMGzxlHrI6xujqQ1I/qSZwbj/3d3j9uCrEcdeuHVanNsYZbZzaYXTXuyJ96lUD3b/W1jeFWB4+eN3rx5nRRsOZ695GDn442uhNW7u/3Zg74n1qaJzSPlpzWcTRcFlN++qUxoijd4xxf6v9HwxRndGa65a1cUdrt2z9ozoj7uiD+7u/quqo+hDZzJqqkYtijy4aWVUzM/Zo/VHuPyXEVzvugfijD4yr/R8+9ZS8318VyDUBCAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAA9MwAfv+bXubPqAH88Q+9zF8CEIAABCAAAQhAAAIQgAAEIAABCEAAAhCAAASQMoBff6OX+cVrIAJAAAgAASAABIAAEAACQAAIAAEIwI9AAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAKgTwfw/vO91Mvd+LN868We5L2oAbz6RC/1TDcG8MKTPckrAhCAAAQgAAEIQAACEIAABCAAAQhAAAIQgAAEIAABCEAAAhCAAAQgAAEIQAACEIAABCAAAQhAAAIQgAAEIAABCEAAAhCAAHIfwJoPe6nPuzGAbz7tSdZEDYC+SgACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAKgiC8+6Em+FkB3e+elnuR9AQhAAAIQgAAEIAABCEAAAhCAAAQgAAEIQAACEIAABCAAAQjA700ACAABIIDi3n46p74XQJvXn8yp7wQgAAEIQAACEIAABCAAAQhAAAIQgAAEIAABCEAAAhCAAPLwGvhsTnkNRAAIAAEgAASAABAAAkAACAABIAAEgAAEIAABCEAAAhCAAAQgAAEIQAACEEDfCOCTV3LqJwG08Y8hAhCAAAQgAAEIQAACEIAABCAAAQhAAAIQgAAEIAABCEAAAhBAXw3gy9dy6mcBIAAEgAAQAAJAAAgAASAABIAAEAACQAACEIAABCAAAQhAAAIQgAAEIAABCKBPBPDmUzn1gwDa+McQAQhAAAIQgAAEIAABCEAAAhCAAAQgAAEIQAACEIAABCCAPhzAu8/l1BoBIAAEgAAQAAJAAAgAASAABIAAEAACQAACEIAABCAAAQhAAAIQgAAEIAABCKBPBPDRizn1owDavJHXfwz5VgACEIAABCAAAQhAAAIQgAAEIAABCEAAAhCAAAQgAAEIQAAC6OsBfPVWTv0sAASAABAAAkAACAABIAAEgAAQAAJAAAhAAALItY/f6Uk+EwACQAAIAAEgAASAABAAAkAACAABCMCPQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACoJcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAM/wJzGow588nj5gAAAABJRU5ErkJggg=="/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 81, 66)" filter="url(#News_feed)">
+      <text id="News_feed-2" data-name="News feed" transform="translate(120 474)" fill="#3d3d3d" font-size="200" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="194">News feed</tspan></text>
+    </g>
+  </g>
+</svg>

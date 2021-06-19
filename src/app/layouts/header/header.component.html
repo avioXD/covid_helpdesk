@@ -1,8 +1,9 @@
 <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
     <div class="container my-2">
-        <a class="navbar-brand" href="#"> {{"Help A SOul" | uppercase}}  <img src="../../../assets/raw/logo.svg"></a>
-        <button (click)="open=!open" class="my-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class=""><img [src]="open?close:menu"></span>
+        <a class="navbar-brand" href="#"> {{"Gobardnga Covid-helpdesk" | uppercase}}  <img src="../../../assets/raw/logo.svg"></a>
+        <button class="nav-btn" (click)="open=!open" class="my-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span *ngIf="open" class=""><img [src]="close"></span>
+            <span *ngIf="!open" class=""><img [src]="menu" ></span>
         </button>
         <div class="collapse navbar-collapse  " id="navbarSupportedContent">
             <ul class="navbar-nav m-auto mb-2 mb-lg-0 ">
@@ -10,7 +11,10 @@
                     <a class="nav-link active color-red" aria-current="page" [routerLink]="['/']" routerLinkActive="router-link-active" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active color-red" aria-current="page" href="#">Oxygen</a>
+                    <a class="nav-link active color-red" aria-current="page" [routerLink]="['/newsfeed']" routerLinkActive="router-link-active" href="/newsfeed">Feeds</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active color-red" aria-current="page" [routerLink]="['/oxygen']" routerLinkActive="router-link-active" href="/oxygen">Oxygen</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active color-red" aria-current="page" [routerLink]="['/hospitals']" routerLinkActive="router-link-active" href="/hospitals">Hospitals</a>
@@ -21,13 +25,19 @@
                 <li class="nav-item">
                     <a class="nav-link active color-red" aria-current="page" [routerLink]="['/volunteers']" routerLinkActive="router-link-active" href="/volunteers">Volunteer</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link active color-red" aria-current="page" href="#">Food Delivery</a>
-                </li>
+                </li> -->
             </ul>
             <ul class="navbar-nav m-auto mb-2 mb-lg-0 ">
+                <li *ngIf="!email" class="nav-item">
+                    <a class="nav-link active color-red" aria-current="page" [routerLink]="['/admin']" routerLinkActive="router-link-active" href="/admin">Admin Login </a>
+                </li>
+                <li *ngIf="email" class="nav-item">
+                    <a class="nav-link active color-red" aria-current="page" [routerLink]="['/admin']" routerLinkActive="router-link-active" href="/admin">Admin Page </a>
+                </li>
                 <li class="nav-item">
-                    <a class="nav-link active color-red" aria-current="page" [routerLink]="['/admin']" routerLinkActive="router-link-active" href="/admin">Admin Login</a>
+                    <a *ngIf="email" (click)="handleSignOut()" class="nav-item nav-link">Log Out</a>
                 </li>
 
             </ul>

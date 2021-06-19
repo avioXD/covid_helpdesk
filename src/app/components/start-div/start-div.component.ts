@@ -10,6 +10,7 @@ export class StartDivComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }

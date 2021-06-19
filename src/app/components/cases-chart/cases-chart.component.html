@@ -1,33 +1,38 @@
 <div class="main container">
     <div class="row p-4">
         <div class="p-4 starter">
-            <h3>{{"Covid-19 Cases" | uppercase}}</h3>
+            <h3>{{"Covid-19 Cases (WB)" | uppercase}}</h3>
         </div>
         <div class="row flex my-4">
-            <div class="col-md-3 box">
-                <div class="card bg-warning m-2 cases">
-                    <h3>New Cases</h3>
-                    <h2>500</h2>
-                </div>
+            <div class="card d-flex justify-content-center bg-info">
+                <span *ngIf="data[0].newcase>data[1].newcase" class="material-icons up animate-mover-fast">expand_less</span>
+                <span *ngIf="data[0].newcase<data[1].newcase" class="material-icons down animate-mover-fast">expand_more</span>
+                <h2>{{(data[0].newcase > 99999) ? (data[0].newcase/1000000)+" L": data[0].newcase}}</h2>
+                <h6>New Cases</h6>
             </div>
-            <div class="col-md-3 box ">
-                <div class="card bg-success m-2 cases">
-                    <h3>Recovered</h3>
-                    <h2>500</h2>
-                </div>
+            <div class="card d-flex justify-content-center bg-danger">
+                <span *ngIf="data[0].active>data[1].active" class="material-icons up animate-mover-fast">expand_less</span>
+                <span *ngIf="data[0].active<data[1].active" class="material-icons down animate-mover-fast">expand_more</span>
+                <h2>{{(data[0].active > 99999) ? (data[0].active/1000000)+" L": data[0].active}}</h2>
+                <h6>Active Cases</h6>
             </div>
-            <div class="col-md-3 box">
-                <div class="card bg-danger m-2 cases">
-                    <h3>Deaths</h3>
-                    <h2>500</h2>
-                </div>
+            <div class="card d-flex justify-content-center bg-success">
+                <span *ngIf="data[0].recovered>data[1].recovered" class="material-icons down animate-mover-fast">expand_less</span>
+                <span *ngIf="data[0].recovered<data[1].recovered" class="material-icons up animate-mover-fast">expand_more</span>
+                <h2>{{(data[0].recovered > 99999) ? (data[0].recovered/1000000)+" L": data[0].recovered}}</h2>
+                <h6>Recovered</h6>
             </div>
-            <div class="col-md-3 box">
-                <div class="card bg-success m-2 cases">
-                    <h3>Vaccined</h3>
-                    <h2>500</h2>
-                </div>
+            <div class="card d-flex justify-content-center bg-danger">
+                <span *ngIf="data[0].deaths>data[1].deaths" class="material-icons up animate-mover-fast">expand_less</span>
+                <span *ngIf="data[0].deaths<data[1].deaths" class="material-icons down animate-mover-fast">expand_more</span>
+                <h2>{{(data[0].deaths > 99999) ? (data[0].deaths/1000000)+" L": data[0].deaths}}</h2>
+                <h6>Deaths</h6>
             </div>
         </div>
     </div>
+    <div class="row mb-5 justify-content-center d-flex" style="display: block">
+        <canvas mdbChart [chartType]="chartType" [datasets]="chartDatasets" [labels]="chartLabels" [colors]="chartColors" [options]="chartOptions" [legend]="true" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
+            </canvas>
+    </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

@@ -1,14 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2161.605" height="822.635" viewBox="0 0 2161.605 822.635">
-  <defs>
-    <clipPath id="clip-path">
-      <rect x="1" width="2161.605" height="822.635" fill="none"/>
-    </clipPath>
-  </defs>
-  <g id="background3" transform="translate(-1)" clip-path="url(#clip-path)" style="isolation: isolate">
-    <g id="Group_25" data-name="Group 25" transform="translate(0.303)">
-      <path id="Path_44" data-name="Path 44" d="M0,0H2162V422s23.646-186.61-346.98-189.52S732.979,649,732.979,649s440.8-349.106,337.477-429.6-562.87,164.685-562.87,164.685S625.536,267.094,536.5,219.4,0,540.676,0,540.676Z" transform="translate(0 115)" fill="#f5b6e6"/>
-      <path id="Path_43" data-name="Path 43" d="M0,0H2162V422s23.646-186.61-346.98-189.52S725.136,716.635,725.136,716.635s448.645-416.74,345.32-497.235S494.332,449.842,494.332,449.842,625.536,267.094,536.5,219.4,0,540.676,0,540.676Z" transform="translate(0 54)" fill="#be0191"/>
-      <path id="Path_42" data-name="Path 42" d="M0,0H2162V422s23.646-186.61-346.98-189.52-1082.773,535.2-1082.773,535.2,125.774-133.548,162.8-171.01c118.5-119.911,254.044-316.01,175.414-377.267C967.131,138.906,498.508,503.321,498.508,503.321s40.217-65.268,61.235-109.775C585.852,338.258,585.828,245.822,536.5,219.4,447.473,171.707,0,540.676,0,540.676Z" transform="translate(-0.303)" fill="#ff0080"/>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2161.605" height="822.635" viewBox="0 0 2161.605 822.635"><defs><clipPath id="clip-path"><path d="M1 0h2161.605v822.635H1z" fill="none"/></clipPath></defs><g id="background3" transform="translate(-1)" clip-path="url(#clip-path)" style="isolation:isolate"><g id="Group_25" data-name="Group 25" transform="translate(0.303)"><path id="Path_44" data-name="Path 44" d="M0 0H2162V422s23.646-186.61-346.98-189.52S732.979 649 732.979 649s440.8-349.106 337.477-429.6-562.87 164.685-562.87 164.685S625.536 267.094 536.5 219.4.0 540.676.0 540.676z" transform="translate(0 115)" fill="#f5b6e6"/><path id="Path_43" data-name="Path 43" d="M0 0H2162V422s23.646-186.61-346.98-189.52S725.136 716.635 725.136 716.635s448.645-416.74 345.32-497.235S494.332 449.842 494.332 449.842 625.536 267.094 536.5 219.4.0 540.676.0 540.676z" transform="translate(0 54)" fill="#be0191"/><path id="Path_42" data-name="Path 42" d="M0 0H2162V422s23.646-186.61-346.98-189.52-1082.773 535.2-1082.773 535.2 125.774-133.548 162.8-171.01c118.5-119.911 254.044-316.01 175.414-377.267C967.131 138.906 498.508 503.321 498.508 503.321s40.217-65.268 61.235-109.775C585.852 338.258 585.828 245.822 536.5 219.4 447.473 171.707.0 540.676.0 540.676z" transform="translate(-0.303)" fill="#ff0080"/></g></g></svg>

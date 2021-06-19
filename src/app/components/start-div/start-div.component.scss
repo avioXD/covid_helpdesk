@@ -1,3 +1,7 @@
+.main {
+    margin-top: 7rem;
+}
+
 .background {
     position: absolute;
     top: 0;
@@ -17,15 +21,17 @@
     align-items: left;
     h1 {
         font-weight: 700;
-        text-align: left;
-        font-size: 80px;
-        color: rgb(255, 255, 255);
-        text-shadow: 2px 2px 4px rgb(130, 130, 130);
+        text-align: center;
+        font-size: 400%;
+        color: rgb(129, 129, 129);
+        text-shadow: 2px 2px 4px rgb(218, 218, 218);
         span {
-            text-shadow: 2px 2px 4px rgba(118, 118, 118, 0.333);
+            text-shadow: 2px 2px 4px rgba(221, 221, 221, 0.055);
         }
     }
     p {
+        padding-left: 2rem;
+        padding-right: 2rem;
         font-weight: 600;
         text-align: left;
         color: rgb(94, 94, 94);
@@ -38,26 +44,35 @@
     justify-content: center;
     margin: auto;
     img {
-        width: 100%;
+        width: 45rem;
         filter: drop-shadow(5px 5px 10px rgb(255, 95, 167));
-        animation: wave 2s reverse infinite;
-    }
-}
-
-@keyframes wave {
-    50% {
-        transform: scale(1.05);
     }
 }
 
 .btn-primary {
+    width: 12rem;
     margin-top: 5px;
     background-color: rgb(255, 0, 72);
     border: 0px;
+    border-radius: 20px;
     color: rgb(255, 255, 255);
     font-weight: 600;
     box-shadow: 1px 1px 16px rgb(248, 115, 170);
     &:hover {
         background-color: rgb(172, 0, 37);
+    }
+}
+
+@media only screen and(max-width: 772px) {
+    .sec-1 {
+        h1 {
+            font-size: 300%;
+        }
+    }
+    .sec-2 {
+        img {
+            width: 20rem;
+            filter: drop-shadow(5px 5px 10px rgb(255, 95, 167));
+        }
     }
 }

@@ -1,12 +1,167 @@
 /* You can add global styles to this file, and also import other style files */
 @import url(e:\MY WORKS\Website Project\Angular JS Online Course3\CovidProject\node_modules\bootstrap\dist\css\bootstrap.min.css);
+@import url(e:\MY WORKS\Website Project\Angular JS Online Course3\CovidProject\node_modules\ngx-toastr\toastr.css);
+@import url(e:\MY WORKS\Website Project\Angular JS Online Course3\CovidProject\node_modules\aos\dist\aos.css);
 .bg-success {
-  background-image: -webkit-gradient(linear, left top, right top, from(#00d8db), to(#02ff52));
-  background-image: linear-gradient(to right, #00d8db, #02ff52);
+  background-image: -webkit-gradient(linear, left top, right top, from(#007d80), to(#02ff52));
+  background-image: linear-gradient(to right, #007d80, #02ff52);
 }
 
 .bg-danger {
-  background-image: -webkit-gradient(linear, left top, right top, from(red), to(#822b65));
-  background-image: linear-gradient(to right, red, #822b65);
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff1456), to(#ff7979));
+  background-image: linear-gradient(to right, #ff1456, #ff7979);
+}
+
+.bg-info {
+  background-image: -webkit-gradient(linear, left top, right top, from(#0015d6), to(#79ffff));
+  background-image: linear-gradient(to right, #0015d6, #79ffff);
+}
+
+@media only screen and (max-width: 285) {
+  html {
+    font-size: 80% !important;
+  }
+  div {
+    width: 80% !important;
+  }
+}
+
+@-webkit-keyframes mover {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
+@keyframes mover {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
+@-webkit-keyframes zoom {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.06);
+            transform: scale(1.06);
+  }
+}
+
+@keyframes zoom {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.06);
+            transform: scale(1.06);
+  }
+}
+
+@-webkit-keyframes in {
+  0% {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes in {
+  0% {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.animate-in {
+  -webkit-animation-name: in;
+          animation-name: in;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.animate-zoom {
+  -webkit-animation: zoom 1s infinite alternate;
+          animation: zoom 1s infinite alternate;
+}
+
+.animate-mover {
+  -webkit-animation: mover 1s infinite alternate;
+          animation: mover 1s infinite alternate;
+}
+
+.animate-mover-fast {
+  animation: mover 0.6s infinite alternate-reverse;
+}
+
+.btn-primary {
+  z-index: 1;
+  right: 25%;
+  left: 25%;
+  position: absolute;
+  bottom: -20px;
+  width: 50%;
+  margin-top: 5px;
+  background-color: #ff0048;
+  border: 0px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  -webkit-box-shadow: 1px 1px 16px #f873aa;
+          box-shadow: 1px 1px 16px #f873aa;
+}
+
+.btn-primary:hover {
+  background-color: #ac0025;
+}
+
+.btn-secondary {
+  width: 15rem;
+  margin-top: 5px;
+  background-color: #ff0048;
+  border: 0px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  -webkit-box-shadow: 1px 1px 16px #f873aa;
+          box-shadow: 1px 1px 16px #f873aa;
+}
+
+.btn-secondary:hover {
+  background-color: #ac0025;
+}
+
+.shadow-red {
+  -webkit-filter: drop-shadow(5px 5px 15px rgba(204, 6, 65, 0.401));
+          filter: drop-shadow(5px 5px 15px rgba(204, 6, 65, 0.401));
+}
+
+.shadow-green {
+  -webkit-filter: drop-shadow(5px 5px 15px rgba(0, 224, 0, 0.401));
+          filter: drop-shadow(5px 5px 15px rgba(0, 224, 0, 0.401));
+}
+
+.shadow-blue {
+  -webkit-filter: drop-shadow(5px 5px 15px rgba(0, 174, 255, 0.401));
+          filter: drop-shadow(5px 5px 15px rgba(0, 174, 255, 0.401));
 }
 /*# sourceMappingURL=styles.css.map */

@@ -5,17 +5,16 @@
             <h3>{{"Resoures" | uppercase}}</h3>
         </div>
         <div class="row my-5 d-flex justify-content-center">
-
-            <div class="card">
+            <div class="card" [routerLink]="['/oxygen']" routerLinkActive="router-link-active" href="/oxygen">
                 <div class="grid">
                     <img src="../../../assets/icon/o2.png" alt="">
                 </div>
                 <h3>Oxygen Suppliers</h3>
                 <div class="grid img">
-                    <button class="btn btn-primary">Check It</button>
+                    <button class="btn btn-primary" [routerLink]="['/oxygen']" routerLinkActive="router-link-active" href="/oxygen">Check It</button>
                 </div>
             </div>
-            <div class="card ">
+            <div class="card " [routerLink]="['/hospitals']" routerLinkActive="router-link-active" href="/hospitlals">
                 <div class="grid">
                     <img src="../../../assets/icon/hospital.png" alt="">
                 </div>
@@ -49,7 +48,7 @@
 
             <div class="card ">
                 <div class="grid">
-                    <img src="../../../assets/icon//home-delivery.png" alt="">
+                    <img src="../../../assets/icon/home-delivery.png" alt="">
                 </div>
                 <h3>Medicine</h3>
                 <div class="grid img">
@@ -58,13 +57,13 @@
             </div>
 
 
-            <div class="card ">
+            <div class="card " [routerLink]="['/volunteers']" routerLinkActive="router-link-active" href="/volunteers">
                 <div class="grid">
                     <img src="../../../assets/icon/charity.png" alt="">
                 </div>
                 <h3>volunteers</h3>
                 <div class="grid img">
-                    <button class="btn btn-primary">Check It</button>
+                    <button class="btn btn-primary" [routerLink]="['/volunteers']" routerLinkActive="router-link-active" href="/volunteers">Check It</button>
                 </div>
             </div>
 

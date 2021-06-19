@@ -1,1 +1,157 @@
-/* No CSS *//*# sourceMappingURL=oxygens.component.css.map */
+.background {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+  background-color: #98ff44;
+}
+
+.main {
+  margin-top: 4rem;
+}
+
+.img-fluid {
+  max-width: 30rem;
+  margin: 0.1rem;
+}
+
+.card {
+  cursor: pointer;
+  margin: 1rem;
+  padding: 0.7rem;
+  max-width: 22rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 2px solid rgba(255, 0, 64, 0.288);
+  border-bottom: 2px solid rgba(250, 0, 62, 0.404);
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 15px rgba(165, 165, 165, 0.401);
+          box-shadow: 5px 5px 15px rgba(165, 165, 165, 0.401);
+  -webkit-transition: border-buttom 0.3s;
+  transition: border-buttom 0.3s;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+.card h2 {
+  font-weight: 600;
+  font-size: 15px;
+  color: #3f3f3f;
+}
+
+.card .h6 {
+  font-size: 12px;
+  color: #737373;
+}
+
+.card .card-header {
+  background-color: white;
+}
+
+.form .form-check-label {
+  font-size: 14px;
+}
+
+.shadow-blue {
+  -webkit-filter: drop-shadow(5px 5px 15px rgba(0, 174, 255, 0.401));
+          filter: drop-shadow(5px 5px 15px rgba(0, 174, 255, 0.401));
+}
+
+.btn-primary {
+  z-index: 1;
+  right: 25%;
+  left: 25%;
+  position: absolute;
+  bottom: -20px;
+  width: 50%;
+  margin-top: 5px;
+  background-color: #007fb9;
+  border: 0px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  -webkit-box-shadow: 1px 1px 16px #73d2f8;
+          box-shadow: 1px 1px 16px #73d2f8;
+}
+
+.btn-primary:hover {
+  background-color: #0084ac;
+}
+
+.btn-secondary {
+  margin-top: 5px;
+  background-color: #007fb9;
+  border: 0px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  -webkit-box-shadow: 1px 1px 16px rgba(0, 74, 97, 0.541);
+          box-shadow: 1px 1px 16px rgba(0, 74, 97, 0.541);
+}
+
+.btn-secondary:hover {
+  background-color: #0059ac;
+}
+
+.img-fluid {
+  width: 30rem;
+  margin: 1rem;
+}
+
+.icon-scial {
+  margin-left: 7px;
+  width: 1.6rem;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.icon-scial:hover {
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+  -webkit-filter: drop-shadow(2px 2px 10px #b8b8b8);
+          filter: drop-shadow(2px 2px 10px #b8b8b8);
+}
+
+.form-control {
+  border: 0px;
+  border-bottom: 1px solid #670062;
+}
+
+.form-control:focus {
+  border-bottom: 2.5px solid #a500a2;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.icon {
+  margin: 1rem;
+  width: 5em;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.icon:hover {
+  -webkit-filter: drop-shadow(2px 2px 4px #fbfbfb);
+          filter: drop-shadow(2px 2px 4px #fbfbfb);
+}
+
+@media only screen and (max-width: 624px) {
+  .img-fluid {
+    max-width: 18rem;
+    margin: 0.1rem;
+  }
+}
+/*# sourceMappingURL=oxygens.component.css.map */

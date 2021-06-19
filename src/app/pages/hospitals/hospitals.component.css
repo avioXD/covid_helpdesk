@@ -1,9 +1,18 @@
+.background {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0.3;
+  z-index: -10;
+}
+
 .img-fluid {
   width: 45rem;
   margin: 1rem;
 }
 
 .icon {
+  padding: 1rem;
   width: 8rem;
   cursor: pointer;
   -webkit-transition: -webkit-transform 0.3s;
@@ -12,15 +21,43 @@
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
-.h-card {
-  background-color: #007ebd;
-  color: white;
-  border-radius: 20px;
-  max-width: 50rem;
+.card {
+  cursor: pointer;
+  margin: 1rem;
+  padding: 0.7rem;
+  max-width: 22rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 2px solid rgba(255, 0, 64, 0.288);
+  border-bottom: 2px solid rgba(250, 0, 62, 0.404);
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 15px rgba(165, 165, 165, 0.401);
+          box-shadow: 5px 5px 15px rgba(165, 165, 165, 0.401);
+  -webkit-transition: border-buttom 0.3s;
+  transition: border-buttom 0.3s;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
-.h-card span {
-  color: #969696;
+.card h2 {
+  font-weight: 600;
+  font-size: 15px;
+  color: #3f3f3f;
+}
+
+.card h6 {
+  font-size: 12px;
+  color: #6b6b6b;
+}
+
+.card .card-header {
+  background-color: white;
 }
 
 .float-img {
@@ -50,37 +87,5 @@
           animation-fill-mode: none;
   -webkit-animation-play-state: running;
           animation-play-state: running;
-}
-
-.background {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  scroll-behavior: auto;
-  z-index: -2;
-}
-
-@-webkit-keyframes anim1 {
-  0% {
-    top: 20rem;
-  }
-  50% {
-    top: 25rem;
-  }
-  100% {
-    top: 20rem;
-  }
-}
-
-@keyframes anim1 {
-  0% {
-    top: 20rem;
-  }
-  50% {
-    top: 25rem;
-  }
-  100% {
-    top: 20rem;
-  }
 }
 /*# sourceMappingURL=hospitals.component.css.map */

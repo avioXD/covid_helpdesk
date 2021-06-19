@@ -1,0 +1,130 @@
+<div class="main">
+    <div class="container-fluid mb-4">
+        <div class="container  d-flex justify-content-center">
+            <img class="img-fluid mt-4" src="../../../assets/raw/newsfeed.svg" alt="">
+        </div>
+
+        <div class="row d-lg-flex justify-content-center">
+            <div class=" card md-4">
+                <h3 class="text-center p-2">Post your needs we will try to help</h3>
+                <button *ngIf="!form" class="btn btn-primary" (click)="form=!form">Create One</button>
+                <div *ngIf="form" class="col-md-12 d-flex justify-content-center form " [id]="'div'">
+                    <div class="col-12 ">
+                        <div class="card-header p-1  d-flex justify-content-center">
+                            <h2>create</h2>
+                            <img src="../../../assets/raw/menucross.svg " alt="" class="icon" style="width: 16px; position:absolute;right:1.9rem ;cursor: pointer;" (click)="form=!form; postForm.reset(); imgString=null">
+                        </div>
+                        <form #postForm="ngForm" (submit)="onPost(postForm.value)">
+                            <div class="card-body  w-100 ">
+                                <div class=" d-flex justify-content-center mb-3">
+                                    <div class="col-12">
+                                        <label for="name" class="form-label">Name </label>
+                                        <input type="name" class="form-control " id="name" placeholder="Name" name="name" ngModel>
+                                    </div>
+                                </div>
+
+                                <div class=" d-flex justify-content-center mb-3 ">
+                                    <div class="col-12">
+                                        <label for="email" class="form-label">Email  (if any) </label>
+                                        <input type="email" class="form-control" id="email" placeholder="Email" name="email" ngModel>
+                                    </div>
+                                </div>
+                                <div class=" d-flex justify-content-center mb-3">
+                                    <div class="col-12">
+                                        <label for="contact" class="form-label">Contact Number</label>
+                                        <input type="telephone" class="form-control" id="contact" placeholder="+91 Number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" name="contact" ngModel>
+                                    </div>
+                                </div>
+                                <div class=" d-flex justify-content-center mb-3">
+                                    <div class="col-12">
+                                        <label for="payment" class="form-label"><span class="material-icons">
+                                            account_balance
+                                            </span> Payment Method</label>
+                                        <input type="text" class="form-control" id="payment" placeholder="number/ UPI ID" name="payment" ngModel>
+                                    </div>
+                                </div>
+                                <div class=" d-flex justify-content-center mb-3">
+                                    <div class="col-12">
+                                        <label for="title" class="form-label">Post Title (30 words)</label>
+                                        <input type="text" class="form-control " id="title" placeholder="Title" name="title" ngModel>
+                                    </div>
+                                </div>
+                                <div class=" d-flex justify-content-center mb-3">
+                                    <div class="col-12">
+                                        <label for="content" class="form-label">Description</label>
+                                        <textarea class="form-control" id="content" rows="5" name="content" placeholder="max 300 words" ngModel></textarea>
+                                    </div>
+                                </div>
+
+                                <div class=" d-flex justify-content-center mb-3">
+                                    <div class="col-12">
+                                        <label for="link" class="form-label"> other links </label>
+                                        <input type="link" class="form-control" id="link" placeholder="Other links" name="link" ngModel>
+                                    </div>
+                                </div>
+                                <div class=" d-flex justify-content-center mb-3">
+                                    <p class=" m-auto"><img class="post-img" [src]='imgString' alt=""></p>
+                                </div>
+                                <div class=" d-flex justify-content-center mb-3">
+                                    <button type="button" for="img" class="btn btn-secondary w-25" (click)="compress()" name="img">select</button>
+                                    <!-- <div class="input-group">
+                                            <input type="file" style="display: none" #file_upload (change)="onFileSelect($event)">
+                                        </div> -->
+                                </div>
+
+                                <div class=" my-5 container d-flex justify-content-center mb-3 ">
+                                    <button class="btn btn-primary " type="submit ">upload</button>
+                                </div>
+
+                            </div>
+                        </form>
+
+
+                        <!-- <app-edit-form [data]="member "></app-edit-form> -->
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="container-fluid ">
+        <h2 class="text-center">CURRENT POST</h2>
+        <hr>
+        <div class=" row">
+            <div class="col-md-12">
+                <div class=" card posts m-auto my-2 mb-4" *ngFor="let post of posts">
+                    <div class="grid w-100">
+                        <span class="m-2 author">Posted by : <span>{{post.name}}</span></span>
+                        <h2 class="m-2 title"> {{post.title}}</h2>
+                        <div class="description ">
+                            <img *ngIf="post.img[0].src" class="post-img " [src]="post.img[0].src" alt=" ">
+                        </div>
+                        <div class="description ">
+                            <h6>Description: </h6>
+                            <p class="h6">{{post.content}}</p>
+                        </div>
+                        <div *ngIf="post.donation" class=" mb-2 ">
+                            <h1 class="text-center "><span> {{post.donation}}<span class="material-icons" style="color: rgb(18, 218, 0); font-weight: 700; ">
+                                <span class="material-icons">
+                                    savings
+                                    </span>
+                                </span>
+                                </span>
+                            </h1>
+                            <h6 class="text-center ">Donations</h6>
+                        </div>
+
+                        <div class="  d-flex justify-content-center ">
+                            <button class="btn btn-secondary m-1 " (click)="call.click()">
+                                <a #call [href]="'tel:'+post.contact"></a>Contact me</button>
+                            <button *ngIf="post.donation" class="btn btn-secondary m-1 ">Donate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { DatePipe } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StartDivComponent } from './components/start-div/start-div.component';
@@ -17,8 +18,10 @@ import{FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import { HospitalsComponent } from './pages/hospitals/hospitals.component';
 import { VolunteersComponent } from './pages/volunteers/volunteers.component';
 import { OxygensComponent } from './pages/oxygens/oxygens.component';
-import { BeavolunteerComponent } from './pages/beavolunteer/beavolunteer.component'
-//import addons: 
+
+//import addons:
+import { MDBBootstrapModulesPro, MDBSpinningPreloader } from 'ng-uikit-pro-standard';
+import { MDBBootstrapModule } from 'angular-bootstrap-md'; 
 import {ToastrModule} from "ngx-toastr";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
@@ -26,13 +29,28 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { FormsModule,  ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+
 //History: 
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { EditVolunteersComponent } from './admin/components/edit-volunteers/edit-volunteers.component';
 import { AdminMainPageComponent } from './admin/admin-main-page/admin-main-page.component';
+import { HomeVolunteerListComponent } from './components/home-volunteer-list/home-volunteer-list.component';
+import { CreatePostComponent } from './components/create-post/create-post.component';
+import { NewsFeedComponent } from './pages/news-feed/news-feed.component';
+
+import {NgxImageCompressService} from 'ngx-image-compress';
+import { EditNewsfeedComponent } from './admin/components/edit-newsfeed/edit-newsfeed.component';
 
 
-
+// firebase Modules: 
+import {environment} from "../environments/environment";
+import { AngularFireAuthModule } from "@angular/fire/auth";
+import { AngularFireModule } from "@angular/fire";
+import { AdminLoginComponent } from './pages/admin-login/admin-login.component';
+import { EditHospitalsComponent } from './admin/components/edit-hospitals/edit-hospitals.component';
+import { EditCovidCasesComponent } from './admin/components/edit-covid-cases/edit-covid-cases.component';
+import { VaccinationComponent } from './pages/vaccination/vaccination.component';
+import { AmbulanceComponent } from './pages/ambulance/ambulance.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,9 +67,18 @@ import { AdminMainPageComponent } from './admin/admin-main-page/admin-main-page.
     HospitalsComponent,
     VolunteersComponent,
     OxygensComponent,
-    BeavolunteerComponent,
     EditVolunteersComponent,
     AdminMainPageComponent,
+    HomeVolunteerListComponent,
+    CreatePostComponent,
+    NewsFeedComponent,
+    EditNewsfeedComponent,
+    AdminLoginComponent,
+    EditHospitalsComponent,
+    EditCovidCasesComponent,
+    VaccinationComponent,
+    AmbulanceComponent,
+    
     
   
   ],
@@ -66,9 +93,14 @@ import { AdminMainPageComponent } from './admin/admin-main-page/admin-main-page.
     ToastrModule.forRoot(),
     BrowserAnimationsModule, 
     RouterModule,
- 
+    AngularFireAuthModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    
+    MDBBootstrapModule.forRoot(),
+    MDBBootstrapModulesPro.forRoot()
+  
   ],
-  providers: [{provide:LocationStrategy , useClass:HashLocationStrategy }],
+  providers: [{provide:LocationStrategy  , useClass:HashLocationStrategy,  }, NgxImageCompressService, MDBSpinningPreloader,DatePipe],
   bootstrap: [AppComponent,]
 })
 export class AppModule { }

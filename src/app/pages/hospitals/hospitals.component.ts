@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
-import { HospitalDataService } from 'src/app/services/hospital-data.service';
+import { ReactiveFormsModule } from '@angular/forms';;
 import * as XLSX from 'xlsx';
 import {ToastrService} from "ngx-toastr";
+import { GETDATAService } from 'src/app/services/get-data.service';
+
 @Component({
   selector: 'app-hospitals',
   templateUrl: './hospitals.component.html',
@@ -10,20 +11,19 @@ import {ToastrService} from "ngx-toastr";
 })
 export class HospitalsComponent implements OnInit {
 sendFile :any;
-
 lists: any;
 
   constructor(public ngForm: ReactiveFormsModule,
-    private hospitalService: HospitalDataService,
+    private getDataService: GETDATAService,
     private toster: ToastrService) { 
-      this.fetchAllData();
+      this.getList();
     }
 
   ngOnInit(): void {
     
   }
-  fetchAllData(){
-    this.hospitalService.getData().subscribe((data)=>{
+  getList(){
+    this.getDataService.getHospitalData().subscribe((data)=>{
       this.lists = data;
     },(err)=>{
       this.toster.error(err);

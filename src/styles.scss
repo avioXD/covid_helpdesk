@@ -1,11 +1,114 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-@import '~ngx-toastr/toastr';
+@import '../node_modules/ngx-toastr/toastr.css';
+@import '../node_modules/aos/dist/aos.css';
 .bg-success {
-    background-image: linear-gradient(to right, rgb(0, 216, 219), rgb(2, 255, 82));
+    background-image: linear-gradient(to right, rgb(0, 125, 128), rgb(2, 255, 82));
 }
 
 .bg-danger {
-    background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(130, 43, 101));
+    background-image: linear-gradient(to right, rgb(255, 20, 86), rgb(255, 121, 121));
+}
+
+.bg-info {
+    background-image: linear-gradient(to right, rgb(0, 21, 214), rgb(121, 255, 255));
+}
+
+@media only screen and(max-width: 285) {
+    html {
+        font-size: 80%!important;
+    }
+    div {
+        width: 80%!important;
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1.0)
+    }
+    100% {
+        transform: scale(1.06)
+    }
+}
+
+@keyframes in {
+    0% {
+        transform: scale(.6)
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+
+.animate-in {
+    animation-name: in;
+    animation-duration: 1s;
+}
+
+.animate-zoom {
+    animation: zoom 1s infinite alternate;
+}
+
+.animate-mover {
+    animation: mover 1s infinite alternate;
+}
+
+.animate-mover-fast {
+    animation: mover 0.6s infinite alternate-reverse;
+}
+
+.btn-primary {
+    z-index: 1;
+    right: 25%;
+    left: 25%;
+    position: absolute;
+    bottom: -20px;
+    width: 50%;
+    margin-top: 5px;
+    background-color: rgb(255, 0, 72);
+    border: 0px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    box-shadow: 1px 1px 16px rgb(248, 115, 170);
+    &:hover {
+        background-color: rgb(172, 0, 37);
+    }
+}
+
+.btn-secondary {
+    width: 15rem;
+    margin-top: 5px;
+    background-color: rgb(255, 0, 72);
+    border: 0px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    box-shadow: 1px 1px 16px rgb(248, 115, 170);
+    &:hover {
+        background-color: rgb(172, 0, 37);
+    }
+}
+
+.shadow-red {
+    filter: drop-shadow(5px 5px 15px rgba(204, 6, 65, 0.401))
+}
+
+.shadow-green {
+    filter: drop-shadow(5px 5px 15px rgba(0, 224, 0, 0.401))
+}
+
+.shadow-blue {
+    filter: drop-shadow(5px 5px 15px rgba(0, 174, 255, 0.401))
 }

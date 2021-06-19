@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "my-app-b458a": {
+      "hosting": {
+        "CovidProject": [
+          "my-app-b458a"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+<img src="../../../assets/raw/background1.svg" alt="" class="background">
+<div class="main container">
+
+    <div class="container">
+        <h1 class="text-center"> {{"Admin Login" |uppercase}}</h1>
+        <div class="col-md-12 p-1 d-flex justify-content-center form " [id]="'div'">
+            <div class="col-12 card">
+                <h2 class="text-center "> Login</h2>
+                <div class="card-body w-100">
+                    <form #postForm="ngForm" (submit)="onSubmit(postForm.value)">
+                        <div class="container d-flex justify-content-center mb-3 ">
+                            <div class="col-12">
+                                <label for="email" class="form-label">Email  </label>
+                                <input type="email" class="form-control" id="email" placeholder="Email" name="email" ngModel>
+                            </div>
+                        </div>
+                        <div class="container d-flex justify-content-center mb-3">
+                            <div class="col-12">
+                                <label for="password" class="form-label">  password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Password" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" name="password" ngModel>
+                            </div>
+                        </div>
+                        <div class="container d-flex justify-content-center mb-3">
+                            <div class="col-12">
+                                <label for="tokenid" class="form-label">Token Id</label>
+                                <input type="text" class="form-control" id="TokenID" placeholder="TOKEN_ID" name="tokenid" ngModel>
+                            </div>
+                        </div>
+                        <div class=" my-5 container d-flex justify-content-center mb-3 ">
+                            <button class="btn btn-primary " type="submit ">GET IN </button>
+                        </div>
+                    </form>
+
+                </div>
+                <!-- <app-edit-form [data]="member "></app-edit-form> -->
+            </div>
+        </div>
+
+
+
+
+    </div>
+</div>

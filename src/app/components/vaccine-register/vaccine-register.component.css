@@ -45,9 +45,11 @@
 }
 
 .btn-primary {
+  width: 15rem;
   margin-top: 5px;
   background-color: #ff0048;
   border: 0px;
+  border-radius: 20px;
   color: white;
   font-weight: 600;
   -webkit-box-shadow: 1px 1px 16px #f873aa;

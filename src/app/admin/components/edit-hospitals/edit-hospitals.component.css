@@ -1,0 +1,121 @@
+.img-fluid {
+  width: 45rem;
+  margin: 1rem;
+}
+
+.icon {
+  padding: 1rem;
+  width: 8rem;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.card {
+  cursor: pointer;
+  margin: 0.6rem;
+  margin-bottom: 1.5rem;
+  padding: 0.8rem;
+  padding-bottom: 2rem;
+  width: 20rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  border: 0;
+  -webkit-box-shadow: 5px 5px 15px rgba(165, 165, 165, 0.401);
+          box-shadow: 5px 5px 15px rgba(165, 165, 165, 0.401);
+  -webkit-transition: border-buttom 0.3s;
+  transition: border-buttom 0.3s;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+.card h2 {
+  font-weight: 700;
+  font-size: 25px;
+  color: #5c5c5cf6;
+}
+
+.card h6 {
+  margin: 4px;
+  font-size: 20px;
+  color: #838383;
+}
+
+.card p {
+  margin-bottom: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #8a8a8a;
+}
+
+.card .badge {
+  margin: 1rem;
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+
+.float-img {
+  position: fixed;
+  top: 35rem;
+  width: 20rem;
+  z-index: -1;
+}
+
+.float-img2 {
+  position: fixed;
+  right: 10px;
+  top: 10rem;
+  width: 70rem;
+  z-index: -2;
+  -webkit-animation-name: anim1;
+          animation-name: anim1;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  scroll-behavior: auto;
+  z-index: -2;
+}
+
+.btn-primary {
+  z-index: 1;
+  right: 25%;
+  left: 25%;
+  position: absolute;
+  bottom: -20px;
+  width: 50%;
+  margin-top: 5px;
+  background-color: #ff0048;
+  border: 0px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  -webkit-box-shadow: 1px 1px 16px #f873aa;
+          box-shadow: 1px 1px 16px #f873aa;
+}
+
+.btn-primary:hover {
+  background-color: #ac0025;
+}
+/*# sourceMappingURL=edit-hospitals.component.css.map */

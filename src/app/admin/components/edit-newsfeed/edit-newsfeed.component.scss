@@ -1,0 +1,104 @@
+.bg-red {
+    background-color: red;
+}
+
+.bg-green {
+    background-color: rgb(0, 206, 0);
+}
+
+.btn-primary {
+    z-index: 1;
+    right: 25%;
+    left: 25%;
+    position: absolute;
+    bottom: -20px;
+    width: 50%;
+    margin-top: 5px;
+    background-color: rgb(255, 0, 72);
+    border: 0px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    box-shadow: 1px 1px 16px rgb(248, 115, 170);
+    &:hover {
+        background-color: rgb(172, 0, 37);
+    }
+}
+
+.btn-secondary {
+    width: 40%;
+    margin-top: 5px;
+    background-color: rgb(255, 0, 72);
+    border: 0px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    box-shadow: 1px 1px 16px rgb(248, 115, 170);
+    &:hover {
+        background-color: rgb(172, 0, 37);
+    }
+}
+
+.card {
+    cursor: pointer;
+    margin: 2rem;
+    padding: 1rem;
+    max-width: 30rem;
+    align-items: center;
+    h3 {
+        font-size: 20px;
+        color: rgb(115, 115, 115);
+    }
+    border-radius: 20px;
+    border:0;
+    box-shadow: 5px 5px 15px rgba(165, 165, 165, 0.401);
+    transition: border-buttom 0.3s;
+    transition: transform 0.4s;
+}
+
+.card-post {
+    position: relative!important;
+    margin: 2rem;
+    border-radius: 20px;
+    padding: 2rem;
+    width: 30rem;
+    align-items: center;
+    h3 {
+        font-size: 20px;
+        color: rgb(115, 115, 115);
+    }
+    border-radius: 20px;
+    //border: 3px solid rgb(155, 155, 155);
+    box-shadow: 5px 5px 15px rgba(165, 165, 165, 0.401);
+    transition: border-buttom 0.3s;
+    transition: transform 0.4s;
+}
+
+.description {
+    margin: 0rem;
+    padding: 1rem;
+    align-items: center;
+    border-radius: 20px;
+    //border: 3px solid rgb(155, 155, 155);
+    // box-shadow: 5px 5px 15px rgba(165, 165, 165, 0.401);
+    transition: border-buttom 0.3s;
+    transition: transform 0.4s;
+    p {
+        color: rgb(115, 115, 115)
+    }
+}
+
+.post-img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(165, 165, 165, 0.401);
+}
+
+.verified {
+    position: absolute;
+    right: 3rem;
+}
+
+.title {
+    color: rgb(255, 88, 152);
+}

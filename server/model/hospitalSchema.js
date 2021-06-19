@@ -32,6 +32,10 @@ const hospitalSchema = new mongoose.Schema({
     h_type:{
         type: String,
         require: false,
+    },
+    update:{
+        type: Date,
+        require: true,
     }
 
 })

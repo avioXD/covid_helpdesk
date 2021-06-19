@@ -3,11 +3,13 @@ const bodyParser= require('body-parser');
 const path = require('path');
 const app = express();
 const dotEnv = require('dotenv');
+const cors = require('cors');
+
 
 dotEnv.config({path: path.join(__dirname,"./config.env")});
 app.use(bodyParser.json());
 app.use(express.json());
-
+app.use(cors());
 
 // connecting database: 
 require("./database/connect.db");
@@ -22,7 +24,7 @@ app.use(require("./route/methodPOST"));
 //GET Methods: 
 app.use(require("./route/methodGET"))
 //Admin Requests: 
-app.use(require("./route/adminRequest"));
+app.use(require("./route/ADMIN_REQUESTS"));
 
 
 try {

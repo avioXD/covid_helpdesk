@@ -35,6 +35,7 @@ $fa-font-path: "../webfonts";
 }
 
 .nav-item a {
+    cursor: pointer;
     color: rgb(54, 54, 54) !important;
     font-size: 16px;
     transition: 0.3s ease-in-out!important;
@@ -72,6 +73,9 @@ $fa-font-path: "../webfonts";
 }
 
 @media only screen and (max-width: 981px) {
+    .navbar-brand {
+        font-size: 10px;
+    }
     .my-btn {
         display: block;
     }

@@ -1,7 +1,7 @@
 <div class="main container">
-    <div class="container p-4">
+    <div class="row">
         <h1 class="text-center"> {{"Admin Panel" |uppercase}}</h1>
-        <div class="row my-5 d-flex justify-content-center">
+        <div *ngIf="!card" class="row my-5 d-flex justify-content-center">
             <div *ngIf="card==0 || card==1" class="card" [ngClass]="card==1?'card-clicked':''">
                 <div class="grid">
                     <img src="../../../assets/icon/charity.png" alt="">
@@ -38,19 +38,47 @@
                     <button class="btn btn-primary" (click)='toogleCard(4)'>{{card!=0?"Back":"Edit"}}</button>
                 </div>
             </div>
+            <div *ngIf="card==0 || card==5" class="card" [ngClass]="card==5?'card-clicked':''">
+                <div class="grid">
+                    <img src="../../../assets/raw/newspaper.svg" alt="">
+                </div>
+                <h3>NewsFeeds</h3>
+                <div class="grid my-5">
+                    <button class="btn btn-primary" (click)='toogleCard(5)'>{{card!=0?"Back":"Edit"}}</button>
+                </div>
+            </div>
+            <div *ngIf="card==0 || card==6" class="card" [ngClass]="card==6?'card-clicked':''">
+                <div class="grid">
+                    <img src="../../../assets/raw/covidlogo.svg" alt=" ">
+                </div>
+                <h3>Update Covid Cases</h3>
+                <div class="grid my-5 ">
+                    <button class="btn btn-primary " (click)='toogleCard(6)'>{{card!=0?"Back ":"Edit "}}</button>
+                </div>
+            </div>
         </div>
-        <div class="container" [ngSwitch]="card">
-            <div *ngSwitchCase="1">
+
+        <div class="row " [ngSwitch]="card ">
+            <div class="grid my-5 ">
+                <button *ngIf="card " class="btn btn-secondary w-25 " (click)='toogleCard(0)'>back</button>
+            </div>
+            <div *ngSwitchCase=" 1 ">
                 <app-edit-volunteers></app-edit-volunteers>
             </div>
-            <div *ngSwitchCase="2">
-                2nd div
+            <div *ngSwitchCase="2 ">
+                <app-edit-hospitals></app-edit-hospitals>
             </div>
-            <div *ngSwitchCase="3">
+            <div *ngSwitchCase="3 ">
                 3rdm iv
             </div>
-            <div *ngSwitchCase="4">
+            <div *ngSwitchCase="4 ">
                 4th div
+            </div>
+            <div *ngSwitchCase="5 ">
+                <app-edit-newsfeed></app-edit-newsfeed>
+            </div>
+            <div *ngSwitchCase="6 ">
+                <app-edit-covid-cases></app-edit-covid-cases>
             </div>
         </div>
 

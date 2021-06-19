@@ -1,0 +1,128 @@
+.background {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+    background-color: rgb(152, 255, 68);
+}
+
+.main {
+    margin-top: 4rem;
+}
+
+.img-fluid {
+    max-width: 30rem;
+    margin: 0.1rem;
+}
+
+.card {
+    cursor: pointer;
+    margin: 1rem;
+    padding: 0.7rem;
+    max-width: 22rem;
+    height: max-content;
+    align-items: center;
+    h2 {
+        font-weight: 600;
+        font-size: 15px;
+        color: rgb(63, 63, 63);
+    }
+    .h6 {
+        font-size: 12px;
+        color: rgb(115, 115, 115);
+    }
+    border-top: 2px solid rgba(255, 0, 64, 0.288);
+    border-bottom: 2px solid rgba(250, 0, 62, 0.404);
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(165, 165, 165, 0.401);
+    transition: border-buttom 0.3s;
+    transition: transform 0.4s;
+    .card-header {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+.form {
+    .form-check-label {
+        font-size: 14px;
+    }
+}
+
+.shadow-blue {
+    filter: drop-shadow(5px 5px 15px rgba(0, 174, 255, 0.401))
+}
+
+.btn-primary {
+    z-index: 1;
+    right: 25%;
+    left: 25%;
+    position: absolute;
+    bottom: -20px;
+    width: 50%;
+    margin-top: 5px;
+    background-color: rgb(0, 127, 185);
+    border: 0px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    box-shadow: 1px 1px 16px rgb(115, 210, 248);
+    &:hover {
+        background-color: rgb(0, 132, 172);
+    }
+}
+
+.btn-secondary {
+    margin-top: 5px;
+    background-color: rgb(0, 127, 185);
+    border: 0px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    box-shadow: 1px 1px 16px rgba(0, 74, 97, 0.541);
+    &:hover {
+        background-color: rgb(0, 89, 172);
+    }
+}
+
+.img-fluid {
+    width: 30rem;
+    margin: 1rem;
+}
+
+.icon-scial {
+    margin-left: 7px;
+    width: 1.6rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+    &:hover {
+        transform: scale(1.06);
+        filter: drop-shadow(2px 2px 10px rgb(184, 184, 184));
+    }
+}
+
+.form-control {
+    border: 0px;
+    border-bottom: 1px solid rgb(103, 0, 98);
+    &:focus {
+        border-bottom: 2.5px solid rgb(165, 0, 162);
+        box-shadow: none;
+    }
+}
+
+.icon {
+    margin: 1rem;
+    width: 5em;
+    cursor: pointer;
+    transition: transform 0.3s;
+    &:hover {
+        filter: drop-shadow(2px 2px 4px rgb(251, 251, 251));
+    }
+}
+
+@media only screen and (max-width: 624px) {
+    .img-fluid {
+        max-width: 18rem;
+        margin: 0.1rem;
+    }
+}
